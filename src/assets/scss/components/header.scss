@@ -1,0 +1,146 @@
+$blue:#2199e8 !default;
+$darkBlur:#2c3840 !default;
+// #main-menu{
+// 	background:#FFF;
+// 	&>.row>ul{
+// 		background:rgba(255,255,255,0);
+// 		&>li:hover{
+// 			background:#1998ED;
+// 			&>a{
+// 				color:#FFF;
+// 				&::after{
+// 					border-color:#FFF $blue transparent transparent;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+.top-bar, .top-bar ul{
+	background:$darkBlur;
+}
+.top-bar{
+	padding:0;
+}
+.marketing-topbar {
+    background: $darkBlur;
+    font-size: .8125rem;
+    font-weight: bold;
+    position: relative
+}
+
+.marketing-topbar::before,.marketing-topbar::after {
+    content: ' ';
+    display: table;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+.marketing-topbar::after {
+    clear: both
+}
+
+.marketing-topbar ul:first-child {
+    float: left
+}
+
+.marketing-topbar ul:last-child {
+    float: right
+}
+
+.marketing-topbar .dropdown.menu a {
+    background: $darkBlur;
+}
+
+.marketing-topbar .dropdown.menu a.button {
+    background: #2199e8
+}
+
+.marketing-topbar .dropdown.menu a.button:hover {
+    background: #147dc2
+}
+
+.marketing-topbar .is-dropdown-submenu-item a:hover {
+    background: #41525e
+}
+
+.marketing-topbar .zurb-logo-text {
+    margin-left: 5px;
+    padding-top: 4px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.marketing-topbar .topbar-title>a {
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 5px
+}
+
+.marketing-topbar .menu a {
+    height: 45px;
+    line-height: 45px !important;
+    color: #f5f5f5;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+}
+
+.marketing-topbar .menu a:hover:not(.button):not(.zurb-logo),.marketing-topbar .menu a:focus {
+    background: #41525e
+}
+
+.marketing-topbar .menu a.button {
+    border-radius: 0;
+    box-shadow: 0 0 0 transparent
+}
+
+.marketing-topbar .menu.submenu {
+    border: 0;
+    margin-left: -1px
+}
+
+.marketing-topbar .dropdown.menu>li.opens-right>.is-dropdown-submenu {
+    border: none
+}
+
+.marketing-topbar .zurb-logo img {
+    height: 45px;
+    width: 76px;
+    opacity: 0.9
+}
+
+.marketing-topbar .topbar-title {
+    opacity: 0.9;
+    transition: all .25s ease-in-out
+}
+
+.marketing-topbar .topbar-title:hover {
+    opacity: 1;
+    transition: all .25s ease-in-out
+}
+
+.marketing-topbar .title {
+    color: #8a8a8a;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 0.8em;
+    background: $darkBlur;
+}
+
+.marketing-topbar .is-active a {
+    background: #020304
+}
+
+.marketing-topbar .menu:last-child {
+    border-left: 1px solid #3B4951
+}
+
+.marketing-topbar .menu li:not(:last-child) {
+    border-right: 1px solid #3B4951
+}

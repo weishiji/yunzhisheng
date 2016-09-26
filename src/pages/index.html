@@ -1,151 +1,382 @@
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Welcome to Foundation for Sites</h1>
+
+<header>
+  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
   </div>
-</div> 
-
-<div class="row">
-  <div class="large-12 columns">
-    <div class="callout">
-      <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-      <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-      <p>Once you've exhausted the fun in this document, you should check out:</p>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 medium-push-2 columns">
-          <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-        </div>
-        <div class="large-4 medium-4 medium-pull-2 columns">
-          <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-        </div>        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="large-8 medium-8 columns">
-    <h5>Here&rsquo;s your basic grid:</h5>
-    <!-- Grid Example -->
-
+  <div class="top-bar marketing-topbar" id="main-menu">
     <div class="row">
-      <div class="large-12 columns">
-        <div class="primary callout">
-          <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
+      <ul class="menu vertical medium-horizontal expanded medium-text-center" data-responsive-menu="drilldown medium-dropdown">
+        <li class="menu-text">Site Title</li>
+        <li><a href="#">首页</a>
+        </li>
+        <li class="has-submenu"><a href="#">产品与服务</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="#">智能家居方案</a></li>
+            <li><a href="#">职能车载方案</a></li>
+            <li><a href="#">职能医疗方案</a></li>
+            <li><a href="#">职能教育方案</a></li>
+            <li><a href="#">陪伴机器人方案</a></li>
+          </ul>
+        </li>
+        <li><a href="#">核心技术</a></li>
+        <li><a href="#">开发者网站</a></li>
+        <li class="has-submenu"><a href="#">关于我们</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
     
-    <hr />
-            
-    <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-    <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-12.columns" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <div class="row collapse">
-            <label>Input Label</label>
-            <div class="input-group">
-              <input class="input-group-field" type="text" placeholder="input-group" />
-              <span class="input-group-label">.com</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Select Box</label>
-          <select>
-            <option value="husker">Husker</option>
-            <option value="starbuck">Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 columns">
-          <label>Choose Your Favorite</label>
-          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <label>Check these out</label>
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-          <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Textarea Label</label>
-          <textarea placeholder="small-12.columns"></textarea>
-        </div>
-      </div>
-    </form>
-  </div>     
+  </div>
 
-  <div class="large-4 medium-4 columns">
-    <h5>Try one of these buttons:</h5>
-    <p><a href="#" class="small button">Simple Button</a><br/>          
-    <a href="#" class="medium success button">Success Btn</a><br/>
-    <a href="#" class="medium alert button">Alert Btn</a><br/>
-    <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-    <div class="callout">
-      <h5>So many components, girl!</h5>
-      <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-      <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-    </div>
+</header>
+
+<br>
+
+<div class="row">
+  <div class="medium-8 columns">
+    <p><img src="http://placehold.it/900x450&text=Promoted Article" alt="main article image"></p>
+  </div>
+  <div class="medium-4 columns">
+    <p><img src="http://placehold.it/400x200&text=Other cool article" alt="article promo image" alt="advertisement for deep fried Twinkies"></p>
+    <p><img src="http://placehold.it/400x200&text=Other cool article" alt="article promo image"></p>
   </div>
 </div>
+
+<hr>
+
+<div class="row column">
+  <h4 style="margin: 0;" class="text-center">BREAKING NEWS</h4>
+</div>
+
+<hr>
+
+<div class="row small-up-3 medium-up-4 large-up-5">
+
+  <div class="column">
+    <img src="http://placehold.it/400x370&text=Look at me!" alt="image for article">
+  </div>
+
+  <div class="column">
+    <img src="http://placehold.it/400x370&text=Look at me!" alt="image for article">
+  </div>
+
+  <div class="column">
+    <img src="http://placehold.it/400x370&text=Look at me!" alt="image for article">
+  </div>
+
+  <div class="column show-for-medium">
+    <img src="http://placehold.it/400x370&text=Look at me!" alt="image for article">
+  </div>
+
+  <div class="column show-for-large">
+    <img src="http://placehold.it/400x370&text=Look at me!" alt="image for article">
+  </div>
+
+</div>
+
+<hr>
+
+<div class="row column">
+  <h4 style="margin: 0;" class="text-center">LATEST STORIES</h4>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
+
+  <article>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="http://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">'Death Star' Vaporizes Its Own Planet</a></h5>
+        <p>
+          <span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 6 comments</i></span>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="http://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">NASA's SLS Rocket Sheds Saturn V Color Scheme in Design Review</a></h5>
+        <p>
+          <span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 6 comments</i></span>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="http://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">Ingredients for Life Were Always Present on Earth, Comet Suggests</a></h5>
+        <p>
+          <span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 6 comments</i></span>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="http://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">Astronaut's Watch Worn on the Moon Sells for Record $1.6 Million</a></h5>
+        <p>
+          <span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 6 comments</i></span>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="http://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">Interstellar Dust on the Galaxy's Magnetic Field | Space Wallpaper</a></h5>
+        <p>
+          <span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 6 comments</i></span>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="http://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">Explore the Moon (Virtually) with These Awesome Global Maps</a></h5>
+        <p>
+          <span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 6 comments</i></span>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="http://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">Best Space Books and Sci-Fi: A Space.com Reading List</a></h5>
+        <p>
+          <span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 6 comments</i></span>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+      <li class="disabled">Previous <span class="show-for-sr">page</span></li>
+      <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+      <li><a href="#" aria-label="Page 2">2</a></li>
+      <li><a href="#" aria-label="Page 3">3</a></li>
+      <li><a href="#" aria-label="Page 4">4</a></li>
+      <li><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+    </ul>
+
+    </article>
+
+  </div>
+
+  <div class="large-4 columns">
+
+    <aside>
+
+      <div class="row small-up-3">
+
+        <div class="column text-center">
+          <i class="fi-social-facebook"></i>
+          <h6>56,009</h6>
+          <p><small>FOLLOWERS</small></p>
+          <br>
+        </div>
+
+        <div class="column text-center">
+          <i class="fi-social-twitter"></i>
+          <h6>76,905</h6>
+          <p><small>FOLLOWERS</small></p>
+          <br>
+        </div>
+
+        <div class="column text-center">
+          <i class="fi-social-instagram"></i>
+          <h6>34,099</h6>
+          <p><small>FOLLOWERS</small></p>
+          <br>
+        </div>
+
+        <div class="column text-center">
+          <i class="fi-social-tumblr"></i>
+          <h6>13,765</h6>
+          <p><small>FOLLOWERS</small></p>
+        </div>
+
+        <div class="column text-center">
+          <i class="fi-social-pinterest"></i>
+          <h6>9,283</h6>
+          <p><small>FOLLOWERS</small></p>
+        </div>
+
+        <div class="column text-center">
+          <i class="fi-social-youtube"></i>
+          <h6>99,000</h6>
+          <p><small>FOLLOWERS</small></p>
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="row column">
+        <p class="lead">FROM OUR FRIENDS</p>
+        <p><img src="http://placehold.it/400x300&text=Buy Me!" alt="advertisement of ShamWow"></p>
+      </div>
+
+      <br>
+
+      <div class="row column">
+        <p class="lead">TRENDING POSTS</p>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img class="thumbnail" src= "http://placehold.it/100">
+          </div>
+          <div class="media-object-section">
+            <h5>All I need is a space suit and I'm ready to go.</h5>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img class="thumbnail" src= "http://placehold.it/100">
+          </div>
+          <div class="media-object-section">
+            <h5>Are the stars out tonight? I don't know if it's cloudy or bright.</h5>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img class="thumbnail" src= "http://placehold.it/100">
+          </div>
+          <div class="media-object-section">
+            <h5>And the world keeps spinning.</h5>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img class="thumbnail" src= "http://placehold.it/100">
+          </div>
+          <div class="media-object-section">
+            <h5>Cold hearted orb that rules the night.</h5>
+          </div>
+        </div>
+
+      </div>
+      
+    </aside>
+    
+  </div>
+</div>
+
+<footer>
+  <div class="row expanded callout secondary">
+
+    <div class="large-4 columns">
+      <h5>FLICKR IMAGES</h5>
+      <div class="row small-up-4">
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="http://placehold.it/75" alt="image of space dog"></div>
+      </div>
+      
+    </div>
+
+    <div class="large-4 columns">
+      <h5>FLICKR IMAGES</h5>
+      <span class="secondary label">Space</span>
+      <span class="secondary label">Galaxies</span>
+      <span class="secondary label">Milky Way</span>
+      <span class="secondary label">Black Holes</span>
+      <span class="secondary label">Rebels</span>
+      <span class="secondary label">Death Star</span>
+      <span class="secondary label">Republic</span>
+      <span class="secondary label">R2D2</span>
+    </div>
+
+    <div class="large-4 columns">
+      <h5>RANDOM MAG</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quam voluptatum vel repellat ab similique molestias molestiae ea omnis eos, id asperiores est praesentium, voluptate officia nulla aspernatur sequi aliquam.</p>
+    </div>
+
+  </div>
+  <div class="row expanded">
+
+    <div class="medium-6 columns">
+      <ul class="menu">
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Partner</a></li>
+        <li><a href="#">Explore</a></li>
+      </ul>
+    </div>
+
+    <div class="medium-6 columns">
+      <ul class="menu align-right">
+        <li class="menu-text">Copyright © 2099 Random Mag</li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
