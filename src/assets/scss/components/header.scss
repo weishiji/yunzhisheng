@@ -1,20 +1,21 @@
 $blue:#2199e8 !default;
 $darkBlur:#2c3840 !default;
-// #main-menu{
-// 	background:#FFF;
-// 	&>.row>ul{
-// 		background:rgba(255,255,255,0);
-// 		&>li:hover{
-// 			background:#1998ED;
-// 			&>a{
-// 				color:#FFF;
-// 				&::after{
-// 					border-color:#FFF $blue transparent transparent;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+//在大屏幕下不显示左边栏按钮
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+
 .top-bar, .top-bar ul{
 	background:$darkBlur;
 }
