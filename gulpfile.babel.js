@@ -104,7 +104,7 @@ function javascript() {
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
     ))
-    .pipe(repace(/"use strict";/,''))
+    //.pipe(repace(/"use strict";/,''))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
