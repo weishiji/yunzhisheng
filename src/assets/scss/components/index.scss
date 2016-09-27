@@ -1,3 +1,4 @@
+@import 'mixins/overlay.scss';
 .home-banner{
 	background: #074E68 url(http://foundation.zurb.com/assets/img/mars-bg.svg) center 30% repeat-x;
   position: relative;
@@ -12,5 +13,8 @@
   	color:#28E7F4;
   	letter-spacing:0.5em;
   	line-height: 2.5;
+  }
+  #particles-js{
+    @include overlay();
   }
 }

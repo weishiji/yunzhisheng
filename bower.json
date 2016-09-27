@@ -18,5 +18,8 @@
     "foundation-sites": "~6.2.3",
     "motion-ui": "~1.2.2"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "particles.js": "^2.0.0"
+  }
 }

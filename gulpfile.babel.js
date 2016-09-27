@@ -10,6 +10,8 @@ import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
 
+const repace = require('gulp-replace');
+
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
@@ -102,6 +104,7 @@ function javascript() {
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
     ))
+    .pipe(repace(/"use strict";/,''))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
