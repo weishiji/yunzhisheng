@@ -1,5 +1,5 @@
 $footerBG : #2F363E !default;
-$font-color:#74797D !default;
+$font-color:#A9ACB0 !default;
 footer{
 	color:#FFF;
 	background: $footerBG;
@@ -8,5 +8,14 @@ footer{
 		&.secondary{
 			background:$footerBG;
 		}
+	}
+	h5{
+		color:#FFF;
+	}
+	a{
+		color:$font-color;
+	}
+	a:hover{
+		color:darken($font-color,15%);
 	}
 }
