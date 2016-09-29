@@ -1,0 +1,12 @@
+$footerBG : #2F363E !default;
+$font-color:#74797D !default;
+footer{
+	color:#FFF;
+	background: $footerBG;
+	.callout{
+		background:$footerBG;
+		&.secondary{
+			background:$footerBG;
+		}
+	}
+}

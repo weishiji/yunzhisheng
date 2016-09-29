@@ -50,6 +50,7 @@
 @include motion-ui-animations;
 
 
-@import './components/header.scss';
+@import './components/_header.scss';
+@import './components/_footer.scss';
 @import './components/index.scss';
 
