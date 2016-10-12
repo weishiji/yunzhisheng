@@ -1,5 +1,6 @@
 $footerBG : #2F363E !default;
 $font-color:#A9ACB0 !default;
+$font-color-hover:#E18E60 !default;
 footer{
 	color:#FFF;
 	background: $footerBG;
@@ -16,6 +17,9 @@ footer{
 		color:$font-color;
 	}
 	a:hover{
-		color:darken($font-color,15%);
+		color:$font-color-hover;
+	}
+	&>div.row{
+		padding:1em;
 	}
 }
