@@ -1,5 +1,5 @@
 $blue:#2199e8 !default;
-$darkBlur:#2c3840 !default;
+$darkBlue:#2c3840 !default;
 $menuBlue:#28A8FA !default;
 //在大屏幕下不显示左边栏按钮
 .no-js {
@@ -29,14 +29,27 @@ header + .re-top{
 
 
 .top-bar, .top-bar ul{
-	//background:$darkBlur;
+	//background:$darkBlue;
     background:transparent;
 }
 .top-bar{
 	padding:0;
 }
+#main-menu.fixed-color{
+    background:#FFF;
+    & a{
+        color:#171E26;
+    }
+}
+
+
+
+
+
+
+
 .marketing-topbar {
-    background: $darkBlur;
+    background: $darkBlue;
     font-size: .8125rem;
     font-weight: bold;
     position: relative;
@@ -65,7 +78,7 @@ header + .re-top{
 }
 
 .marketing-topbar .dropdown.menu>a {
-    background: $darkBlur;
+    background: $darkBlue;
 }
 
 .marketing-topbar .dropdown.menu a.button {
@@ -73,11 +86,13 @@ header + .re-top{
 }
 
 .marketing-topbar .dropdown.menu a.button:hover {
-    background: darken($menuBlue,20%);
+    background: darken($menuBlue,10%);
+    color:#FFF;
 }
 
 .marketing-topbar .is-dropdown-submenu-item a:hover {
-    background: darken($menuBlue,20%);
+    background: darken($menuBlue,10%);
+    color:#FFF;
 }
 
 .marketing-topbar .zurb-logo-text {
@@ -107,7 +122,7 @@ header + .re-top{
 }
 
 .marketing-topbar .menu a:hover:not(.button):not(.zurb-logo),.marketing-topbar .menu a:focus {
-    background: darken($menuBlue,20%);
+    background: darken($menuBlue,10%);
 }
 
 .marketing-topbar .menu a.button {
@@ -145,7 +160,7 @@ header + .re-top{
     padding: 10px;
     padding-left: 15px;
     font-size: 0.8em;
-    background: $darkBlur;
+    background: $darkBlue;
 }
 
 .marketing-topbar .is-active a {

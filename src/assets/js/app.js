@@ -107,6 +107,18 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
-
+var $banner = $('div[data-banner]');
+if($banner.length !== 0){
+  $topMenu = $('#main-menu');
+  $(window).on('scroll',function(){
+    var scrollBarPos = $(this).scrollTop();
+    var bannerHeight = $banner.outerHeight(true);
+    if(scrollBarPos > bannerHeight){
+      $topMenu.addClass('fixed-color');
+    }else{
+      $topMenu.removeClass('fixed-color');
+    }
+  })
+}
 
 
