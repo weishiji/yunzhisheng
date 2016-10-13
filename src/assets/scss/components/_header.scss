@@ -37,8 +37,14 @@ header + .re-top{
 }
 #main-menu.fixed-color{
     background:#FFF;
+    & li.is-active a{
+        color:#FFF;
+    }
     & a{
         color:#171E26;
+        &:hover{
+            color:#FFF;
+        }
     }
 }
 
@@ -87,12 +93,10 @@ header + .re-top{
 
 .marketing-topbar .dropdown.menu a.button:hover {
     background: darken($menuBlue,10%);
-    color:#FFF;
 }
 
 .marketing-topbar .is-dropdown-submenu-item a:hover {
     background: darken($menuBlue,10%);
-    color:#FFF;
 }
 
 .marketing-topbar .zurb-logo-text {

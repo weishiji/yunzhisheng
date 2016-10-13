@@ -118,7 +118,7 @@ if($banner.length !== 0){
     }else{
       $topMenu.removeClass('fixed-color');
     }
-  })
+  }.call(this))
 }
 
 
