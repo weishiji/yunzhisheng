@@ -1,5 +1,6 @@
 $blue:#2199e8 !default;
 $darkBlur:#2c3840 !default;
+$menuBlue:#28A8FA !default;
 //在大屏幕下不显示左边栏按钮
 .no-js {
   @include breakpoint(small only) {
@@ -63,7 +64,7 @@ header + .re-top{
     float: right;
 }
 
-.marketing-topbar .dropdown.menu a {
+.marketing-topbar .dropdown.menu>a {
     background: $darkBlur;
 }
 
@@ -72,11 +73,11 @@ header + .re-top{
 }
 
 .marketing-topbar .dropdown.menu a.button:hover {
-    background: #147dc2
+    background: darken($menuBlue,20%);
 }
 
 .marketing-topbar .is-dropdown-submenu-item a:hover {
-    background: #41525e
+    background: darken($menuBlue,20%);
 }
 
 .marketing-topbar .zurb-logo-text {
@@ -106,7 +107,7 @@ header + .re-top{
 }
 
 .marketing-topbar .menu a:hover:not(.button):not(.zurb-logo),.marketing-topbar .menu a:focus {
-    background: #41525e
+    background: darken($menuBlue,20%);
 }
 
 .marketing-topbar .menu a.button {
@@ -116,7 +117,7 @@ header + .re-top{
 
 .marketing-topbar .menu.submenu {
     border: 0;
-    margin-left: -1px
+    //margin-left: -1px;
 }
 
 .marketing-topbar .dropdown.menu>li.opens-right>.is-dropdown-submenu {
@@ -148,15 +149,17 @@ header + .re-top{
 }
 
 .marketing-topbar .is-active a {
-    background: #020304
+    background: $menuBlue;
 }
 
 .marketing-topbar .menu:last-child {
-    border-left: 1px solid #3B4951
+    //border-left: 1px solid #3B4951
 }
 
 .marketing-topbar .menu li:not(:last-child) {
-    border-right: 1px solid #3B4951
+    //border-right: 1px solid #3B4951
 }
-
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after{
+    border-color:#FFF transparent transparent;
+}
 
