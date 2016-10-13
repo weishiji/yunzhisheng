@@ -110,7 +110,7 @@ particlesJS("particles-js", {
 var $banner = $('div[data-banner]');
 if($banner.length !== 0){
   $topMenu = $('#main-menu');
-  $(window).on('scroll',function(){
+  function scrollY(){
     var scrollBarPos = $(this).scrollTop();
     var bannerHeight = $banner.outerHeight(true);
     if(scrollBarPos > bannerHeight){
@@ -118,7 +118,9 @@ if($banner.length !== 0){
     }else{
       $topMenu.removeClass('fixed-color');
     }
-  }.call(this))
+  };
+  scrollY();
+  $(window).on('scroll',scrollY);
 }
 
 
