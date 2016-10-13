@@ -28,7 +28,8 @@ header + .re-top{
 
 
 .top-bar, .top-bar ul{
-	background:$darkBlur;
+	//background:$darkBlur;
+    background:transparent;
 }
 .top-bar{
 	padding:0;

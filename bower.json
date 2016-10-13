@@ -20,6 +20,7 @@
   },
   "private": true,
   "devDependencies": {
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "ScrollToFixed": "^1.0.8"
   }
 }
