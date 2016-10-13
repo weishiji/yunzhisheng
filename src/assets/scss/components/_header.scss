@@ -14,8 +14,16 @@ $darkBlur:#2c3840 !default;
     }
   }
 }
-header{
-  z-index: 9;
+
+@include breakpoint(small only){
+    header{
+      z-index: 9;
+    }
+}
+//缩进向上的差值
+header + .re-top{
+    position:relative;
+    top:-45px;
 }
 
 
@@ -29,7 +37,8 @@ header{
     background: $darkBlur;
     font-size: .8125rem;
     font-weight: bold;
-    position: relative
+    position: relative;
+    background:transparent;
 }
 
 .marketing-topbar::before,.marketing-topbar::after {
@@ -46,11 +55,11 @@ header{
 }
 
 .marketing-topbar ul:first-child {
-    float: left
+    float: left;
 }
 
 .marketing-topbar ul:last-child {
-    float: right
+    float: right;
 }
 
 .marketing-topbar .dropdown.menu a {
