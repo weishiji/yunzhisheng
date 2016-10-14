@@ -1,4 +1,6 @@
 @import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+$boderLine:#B2E2F7 !default;
 .home-banner{
 	background: #074E68 url(/assets/img/im__banner_home.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
@@ -20,3 +22,21 @@
   }
 }
 
+.close-loop{
+  @include clearfix();
+  .ai-item{
+    height:9rem;
+    border:1px solid $boderLine;
+    display:inline-block;
+    float:left;
+    &.one{
+      width:100%;
+    }
+    &.two{
+      width:50%;
+    }
+    &.three{
+      width:33.3333333333%;
+    }
+  }
+}

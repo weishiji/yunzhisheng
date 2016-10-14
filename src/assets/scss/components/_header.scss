@@ -41,6 +41,9 @@ header + .re-top{
     border-bottom:1px solid #ddd;
     & li.is-active a{
         color:#FFF;
+        &:hover{
+            color:$menuDark;    
+        }
     }
     & a{
         color:$menuDark;
