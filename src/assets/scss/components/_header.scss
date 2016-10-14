@@ -33,6 +33,9 @@ header + .re-top{
 	//background:$darkBlue;
     background:transparent;
 }
+header{
+    z-index:9999;
+}
 .top-bar{
 	padding:0;
 }

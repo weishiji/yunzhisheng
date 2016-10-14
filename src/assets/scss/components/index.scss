@@ -1,6 +1,6 @@
 @import 'mixins/overlay.scss';
 @import 'mixins/clearfixed.scss';
-$boderLine:#B2E2F7 !default;
+$borderLine:#B2E2F7 !default;
 .home-banner{
 	background: #074E68 url(/assets/img/im__banner_home.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
@@ -24,12 +24,18 @@ $boderLine:#B2E2F7 !default;
 
 .close-loop{
   @include clearfix();
+  & .row{
+    position:relative;
+  }
   .ai-item{
     height:9rem;
-    border:1px solid $boderLine;
+    border:1px solid $borderLine;
     display:inline-block;
     float:left;
-    margin-bottom:2rem;
+    margin-bottom:3rem;
+    position:relative;
+    z-index:9;
+    background:#FFF;
     &.one{
       width:100%;
     }
@@ -39,5 +45,15 @@ $boderLine:#B2E2F7 !default;
     &.three{
       width:33.3333333333%;
     }
+  }
+  .loop-line{
+    position:absolute;
+    z-index:1;
+    border:1px solid $borderLine;
+    width:30%;
+    height:24rem;
+    right:0;
+    top:4.5rem;
+    left:50%;
   }
 }
