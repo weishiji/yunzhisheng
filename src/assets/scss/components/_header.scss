@@ -24,7 +24,7 @@ $menuBlue:#28A8FA !default;
 //缩进向上的差值
 header + .re-top{
     position:relative;
-    top:-45px;
+    margin-top:-45px;
 }
 
 
@@ -37,6 +37,7 @@ header + .re-top{
 }
 #main-menu.fixed-color{
     background:#FFF;
+    border-bottom:1px solid #ddd;
     & li.is-active a{
         color:#FFF;
     }
