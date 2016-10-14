@@ -49,11 +49,19 @@ $borderLine:#B2E2F7 !default;
   .loop-line{
     position:absolute;
     z-index:1;
-    border:1px solid $borderLine;
     width:30%;
     height:24rem;
     right:0;
     top:4.5rem;
     left:50%;
+    outline: 2px dashed #BEF202;
+    box-shadow: 0 0 0 2px #1B676B;
+    animation: 2s animateBorderThree ease infinite;
   }
+  @keyframes animateBorderThree {
+  to {
+    outline-color: #1B676B;
+    box-shadow: 0 0 0 2px #BEF202;
+  }
+}
 }
