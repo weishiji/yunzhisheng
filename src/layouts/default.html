@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>云知声－智享未来</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
@@ -20,7 +20,7 @@
           <div class="top-bar marketing-topbar" id="main-menu">
             <div class="row">
               <ul class="menu vertical medium-horizontal expanded medium-text-center" data-responsive-menu="drilldown medium-dropdown">
-                <li class="menu-text">{{ title }}</li>
+                <li class="menu-text">{{ logo }}</li>
                 <li><a href="/">首页</a>
                 </li>
                 <li class="has-submenu"><a href="#">产品与服务</a>
@@ -52,7 +52,7 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
-    {{#ifpage 'index' 'about'}}
+    {{#ifpage 'index' 'smart_home'}}
       <footer>
         <div class="row secondary">
           <div class="large-5 columns">
