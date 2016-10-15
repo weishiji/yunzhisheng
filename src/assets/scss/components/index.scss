@@ -35,15 +35,40 @@ $borderLine:#B2E2F7 !default;
     margin-bottom:3rem;
     position:relative;
     z-index:9;
-    background:#FFF;
+    background:#FFF url(/assets/img/ai.png) no-repeat;
+    .ai-title{
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      text-align:center;
+      margin-bottom:0;
+      line-height:2em;
+    }
     &.one{
       width:100%;
+      background-position:-36px -44px;
     }
     &.two{
       width:50%;
+      &.brain{
+        background-position:-186px -44px;
+      }
+      &.people{
+        background-position:-338px -44px;
+      }
     }
     &.three{
       width:33.3333333333%;
+      &.study{
+        background-position:-338px -44px;
+      }
+      &.cloud{
+        background-position:-338px -44px;
+      }
+      &.da{
+        background-position:-338px -44px;
+      }
     }
   }
   .loop-line{
@@ -54,14 +79,14 @@ $borderLine:#B2E2F7 !default;
     right:0;
     top:4.5rem;
     left:50%;
-    outline: 2px dashed #BEF202;
-    box-shadow: 0 0 0 2px #1B676B;
+    outline: 2px dashed #E0E4CC;
+    box-shadow: 0 0 0 2px #69D2E7;
     animation: 2s animateBorderThree ease infinite;
   }
   @keyframes animateBorderThree {
   to {
-    outline-color: #1B676B;
-    box-shadow: 0 0 0 2px #BEF202;
+    outline-color: #69D2E7;
+    box-shadow: 0 0 0 2px #E0E4CC;
   }
 }
 }
