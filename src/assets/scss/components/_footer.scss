@@ -22,4 +22,10 @@ footer{
 	&>div.row{
 		padding:1em;
 	}
+	.copyright{
+		border-top:1px solid #777;
+		p{
+			margin:0;
+		}
+	}
 }
