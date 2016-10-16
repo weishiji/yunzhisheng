@@ -57,7 +57,7 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
-    {{#ifpage 'index' 'smart_home'}}
+    {{#ifpage 'index' 'smart_home' 'kar'}}
       <footer>
         <div class="row secondary">
           <div class="large-5 columns">
@@ -91,6 +91,7 @@
                   <li><a href="">联系我们</a></li>
                 </ul>
               </div>
+              {{#ifpage 'index' 'smart_home'}}
               <div class="small-8 columns">
                 <h5>方案咨询</h5>
                 <ul class="menu vertical">
@@ -99,6 +100,17 @@
                   <li><a href="">咨询邮箱:yunzhisheng@unisounde.com</a></li>
                 </ul>
               </div>
+              {{/ifpage}}
+              {{#ifpage 'kar'}}
+                <div class="small-8 columns">
+                  <h5>KAR方案咨询</h5>
+                  <ul class="menu vertical">
+                    <li><a href="javascript:;">北京:李先生 13220127196</a></li>
+                    <li><a href="javascript:;">上海:孙先生 17740894193</a></li>
+                    <li><a href="javascript:;">深圳:胡先生 18038187996</a></li>
+                  </ul>
+                </div>
+              {{/ifpage}}
             </div>
           </div>
         </div>
