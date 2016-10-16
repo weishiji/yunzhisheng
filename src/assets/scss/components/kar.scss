@@ -1,0 +1,49 @@
+@import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+.kar-banner1{
+	background: #333 url(/assets/img/kar_1.jpg) center 30% repeat-x;
+  //background: #074E68 center 30% repeat-x;
+  position: relative;
+  padding: 34rem 0 14.5rem;
+  text-align: center;
+  overflow: visible;
+  h1{
+  	color:#FFF;
+  	text-align:left;
+  }
+  h6{
+    color:#FFF;
+    text-align:left;
+  }
+  .mask{
+    @include overlay();
+    background:rgba(242, 163, 170,0.6);
+    padding-top:17rem;
+
+  }
+}
+.car-description{
+  p{
+    color:#999;
+  }
+}
+.kar-banner2{
+  background: #333 url(/assets/img/kar_2.jpg) center 30% repeat-x;
+  position: relative;
+  padding: 30.5rem 0 14.5rem;
+  text-align: center;
+  overflow: visible;
+  .mask{
+    @include overlay();
+    background:RGBA(35, 156, 198, .6);
+    padding-top:17rem;
+  }
+  h1{
+    color:#FFF;
+    text-align:center;
+  }
+  h6{
+    color:#FFF;
+    text-align:center;
+  }
+}
