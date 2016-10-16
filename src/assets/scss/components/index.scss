@@ -47,27 +47,33 @@ $borderLine:#B2E2F7 !default;
     }
     &.one{
       width:100%;
-      background-position:-56px -64px;
+      //background-position:-56px -64px;
+      background-position:5% 12%;
     }
     &.two{
       width:50%;
       &.brain{
-        background-position:-250px -64px;
+        //background-position:-250px -64px;
+        background-position:22% 12%;
       }
       &.people{
-        background-position:-468px -64px;
+        //background-position:-468px -64px;
+        background-position:42% 12%;
       }
     }
     &.three{
       width:33.3333333333%;
       &.study{
-        background-position:-690px -64px;
+        //background-position:-690px -64px;
+        background-position:62% 12%;
       }
       &.cloud{
-        background-position:-894px -64px;
+        //background-position:-894px -64px;
+        background-position:79% 12%;
       }
       &.da{
-        background-position:-1102px -64px;
+        //background-position:-1102px -64px;
+        background-position:98% 12%;
       }
     }
   }

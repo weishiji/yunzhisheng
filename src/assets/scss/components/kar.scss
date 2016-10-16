@@ -47,3 +47,32 @@
     text-align:center;
   }
 }
+.unitoy-content{
+  padding:8rem 0 16rem 0;
+  background: #FFF url(/assets/img/kar.png) no-repeat;
+  position:relative;
+  .list-footer{
+    position:absolute;
+    width:100%;
+    top:70%;
+    h5{
+      color:RGBA(104, 108, 111, 1.00);
+      text-align:center;
+    }
+    h6{
+      color:lighten(#686C6F,20%);
+      text-align:center;
+    }
+  }
+  
+  &.ai{
+    background-position:36% 105%;
+  }
+  &.database{
+    background-position:66% 105%;
+  }
+  &.app{
+    background-position:96% 105%;
+  }
+}
+
