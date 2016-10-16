@@ -18,8 +18,11 @@ $menuDark:darken($menuBlue,40%) !default;
 }
 
 @include breakpoint(small only){
-    header{
-      z-index: 9;
+    .is-drilldown{
+        position:absolute;
+    }
+    .fixed-color .is-drilldown{
+        background:#FFF;
     }
 }
 //缩进向上的差值
@@ -56,6 +59,18 @@ header{
     }
 }
 
+.title-area{
+    padding:0 !important;
+    a:hover{
+        background:none !important;
+
+    }
+}
+@include breakpoint(small only) {
+   .is-drilldown li.title-area {
+      display: none !important;
+    }
+  }
 
 
 

@@ -35,7 +35,7 @@ $borderLine:#B2E2F7 !default;
     margin-bottom:3rem;
     position:relative;
     z-index:9;
-    background:#FFF url(/assets/img/ai.png) no-repeat;
+    background:#FFF url(/assets/img/home.png) no-repeat;
     .ai-title{
       position:absolute;
       bottom:0;
@@ -47,27 +47,27 @@ $borderLine:#B2E2F7 !default;
     }
     &.one{
       width:100%;
-      background-position:-36px -44px;
+      background-position:-56px -64px;
     }
     &.two{
       width:50%;
       &.brain{
-        background-position:-186px -44px;
+        background-position:-250px -64px;
       }
       &.people{
-        background-position:-338px -44px;
+        background-position:-468px -64px;
       }
     }
     &.three{
       width:33.3333333333%;
       &.study{
-        background-position:-338px -44px;
+        background-position:-690px -64px;
       }
       &.cloud{
-        background-position:-338px -44px;
+        background-position:-894px -64px;
       }
       &.da{
-        background-position:-338px -44px;
+        background-position:-1102px -64px;
       }
     }
   }
