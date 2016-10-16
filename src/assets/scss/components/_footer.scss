@@ -28,4 +28,22 @@ footer{
 			margin:0;
 		}
 	}
+	.home-social{
+		a{
+			background: url(/assets/img/home.png) no-repeat;
+			padding:2.4rem;
+		}
+		.wechat{
+			background-position:-310px -460px;
+			&:hover{
+				background-position:-510px -460px;
+			}
+		}
+		.webo{
+			background-position:-730px -460px;	
+			&:hover{
+				background-position:-950px -460px;	
+			}
+		}
+	}
 }
