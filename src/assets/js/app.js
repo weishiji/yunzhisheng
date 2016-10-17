@@ -2,7 +2,6 @@ $(document).foundation();
 //首页path效果
 /* ---- particles.js config ---- */
 
-/*
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -108,7 +107,7 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-*/
+
 var $banner = $('div[data-banner]');
 if($banner.length !== 0){
   $topMenu = $('#main-menu');
