@@ -37,7 +37,6 @@ function canvas_bg(url,worlUrl){
         };
     }
     $(window).resize(resizeCanvas);
-    resizeCanvas();
     function drawBgPoints()
     {
         context.save();
@@ -296,7 +295,7 @@ function canvas_bg(url,worlUrl){
             //lan.beginFill(0xFF0000);
             //lan.lineStyle(4, 0xffd900, 1);
 
-            var textSample = new PIXI.Text(imgObj[j].imgDesc, { font: '18px Georgia-Italic', fill: 'white' });
+            var textSample = new PIXI.Text(imgObj[j].imgDesc, { fontFamily: '18px Georgia-Italic', fill: 'white' });
 
             textSample.position.x=bunny.width/2;
             textSample.position.y=bunny.height/2;
@@ -383,8 +382,9 @@ function canvas_bg(url,worlUrl){
         if (!!window.ActiveXObject || "ActiveXObject" in window)return;
         var winWidth=document.documentElement.clientWidth||document.body.clientWidth;
         if(winWidth<1200)winWidth=1200;
-           $("#canvas2").attr({"width":winWidth}).css({'left' : ($(window).width() - winWidth)});
-           $("#svg").attr({"width":winWidth}).css({'left' : ($(window).width() - winWidth)});
+            var adjust = ($(window).width() - winWidth);
+           $("#canvas2").attr({"width":winWidth}).css({'left' : adjust});
+           $("#svg").attr({"width":winWidth}).css({'left' : adjust});
 
 
 
@@ -447,8 +447,10 @@ function canvas_bg(url,worlUrl){
     }
     function work(){
         stage1 = new PIXI.Container();
+        
         new svg_circle();
         animate();
+           
         return false;
         $.post(url,{'last':last,'amount':showNum},function(re){
             svg = $("#svg").html();
@@ -478,6 +480,9 @@ function canvas_bg(url,worlUrl){
             }
             return ;
         })
+    }
+    if($(window).width() < 1200){
+        resizeCanvas();
     }
 }
 
