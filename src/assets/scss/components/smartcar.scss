@@ -1,5 +1,6 @@
 @import 'mixins/overlay.scss';
 @import 'mixins/clearfixed.scss';
+$orange : #ED892E !default;
 .smart-car-banner{
 	background: #333 url(/assets/img/im__banner_chezai.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
@@ -17,3 +18,9 @@
     color:#999;
   }
 }
+.smart-car-case{
+  .special-letter{
+    color:$orange;
+  }  
+}
+
