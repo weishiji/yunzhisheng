@@ -103,3 +103,13 @@ $borderLine:#B2E2F7 !default;
     }
   }
 }
+.home-marketing{
+  position:relative;
+  overflow:hidden;
+  padding:1rem 0 1rem 0;
+  background:#053E76;
+  .particles-js-2{
+    @include overlay();
+  }
+}
+

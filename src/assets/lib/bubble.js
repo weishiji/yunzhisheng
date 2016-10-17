@@ -37,6 +37,7 @@ function canvas_bg(url,worlUrl){
         };
     }
     $(window).resize(resizeCanvas);
+    resizeCanvas();
     function drawBgPoints()
     {
         context.save();
@@ -77,7 +78,8 @@ function canvas_bg(url,worlUrl){
 
     d3.timer(function()
     {
-        drawBgPoints();
+        //停止自带的效果
+        //drawBgPoints();
     });
 
 
@@ -114,16 +116,12 @@ function canvas_bg(url,worlUrl){
         var romImg=Math.round(Math.random()*9+1)
         romImg=8
         imgObj=[
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease1.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease2.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease3.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease4.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease5.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease6.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease7.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease8.html"},
-            {"imgUrl":"/Public/Images/templet/work/layer"+romImg+".png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease9.html"},
+            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"}
         ]
         n = imgObj.length;// total number of nodes   ͼƬ����
         img_r=[]
@@ -385,8 +383,8 @@ function canvas_bg(url,worlUrl){
         if (!!window.ActiveXObject || "ActiveXObject" in window)return;
         var winWidth=document.documentElement.clientWidth||document.body.clientWidth;
         if(winWidth<1200)winWidth=1200;
-           $("#canvas2").attr("width",winWidth);
-           $("#svg").attr("width",winWidth);
+           $("#canvas2").attr({"width":winWidth}).css({'left' : ($(window).width() - winWidth)});
+           $("#svg").attr({"width":winWidth}).css({'left' : ($(window).width() - winWidth)});
 
 
 

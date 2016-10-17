@@ -61,7 +61,9 @@ header{
 }
 
 .title-area{
-    padding:0 !important;
+    a{
+        padding:0 !important;    
+    }
     a:hover{
         background:none !important;
 
