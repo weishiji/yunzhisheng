@@ -1,7 +1,7 @@
 @import 'mixins/overlay.scss';
 @import 'mixins/clearfixed.scss';
 .kar-banner1{
-	background: #333 url(/assets/img/kar_1.jpg) center 30% repeat-x;
+	background: #333 url(/assets/img/kar/kar_1.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
   position: relative;
   padding: 34rem 0 14.5rem;
@@ -28,7 +28,7 @@
   }
 }
 .kar-banner2{
-  background: #333 url(/assets/img/kar_2.jpg) center 30% repeat-x;
+  background: #333 url(/assets/img/kar/kar_2.jpg) center 30% repeat-x;
   position: relative;
   padding: 30.5rem 0 14.5rem;
   text-align: center;
