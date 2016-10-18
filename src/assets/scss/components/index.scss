@@ -2,7 +2,7 @@
 @import 'mixins/clearfixed.scss';
 $borderLine:#B2E2F7 !default;
 .index-banner{
-	background: #074E68 url(/assets/img/im__banner_home.jpg) center 30% repeat-x;
+	background: #074E68 url(/assets/img/index/im__banner_home.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
   position: relative;
   padding: 8.5rem 0 10.5rem;
@@ -113,8 +113,63 @@ $borderLine:#B2E2F7 !default;
   }
 }
 .home-business{
+  margin-bottom:2rem;
+  .case-item{
+    padding:3rem;
+    position:relative;
+    &:hover .mask-icon{
+      display:none;
+    }
+  }
+  img{
+    width:100%;
+  }
   .item{
-    padding:1rem 3rem;
+    position:relative;
+    .mask-icon{
+      @include overlay();
+      background:rgba(0,0,0,.5);
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .sm-home,.sm-med,.sm-car,.sm-edu{
+    color:#FFF;
+    text-align:center;
+    margin-bottom:0;
+    margin-top: 28%;
+    span{
+      background:url(/assets/img/index/home_case_icon.png) center;
+      display:inline-block;
+      width:4rem;
+      height:4rem;  
+      background-size: 500px;
+    }
+    b{
+      position:relative;
+      top:-39px;
+    }
+  }
+  .sm-home span{
+    background-position: -45px -34px;
+  }
+  .sm-car span{
+    background-position: -161px -34px;
+  }
+  .sm-med span{
+    background-position: -281px -34px;
+  }
+  .sm-edu span{
+    background-position: -385px -26px;
+  }
+  .footer{
+    background:#1B98D6;
+    padding:1rem;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:70%;
+    color:#FFF;
   }
 }
 
