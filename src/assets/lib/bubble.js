@@ -115,12 +115,13 @@ function canvas_bg(url,worlUrl){
         var romImg=Math.round(Math.random()*9+1)
         romImg=8
         imgObj=[
-            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/logo_white.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"}
+            {"imgUrl":"/assets/img/home1.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/home2.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/home3.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/home4.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/home5.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/home6.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/home7.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"}
         ]
         n = imgObj.length;// total number of nodes   ͼƬ����
         img_r=[]
