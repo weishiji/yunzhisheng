@@ -6,7 +6,6 @@ function canvas_bg(url,worlUrl){
     $(".moreworks").on("click",function(){
         img_update();
     })
-    
     $("#canvas").attr("width",$(window).width()<1200?1200:$(window).width());
     var showNum = 8;
     var last = 0;
@@ -451,7 +450,9 @@ function canvas_bg(url,worlUrl){
         
         new svg_circle();
         animate();
-           
+        setTimeout(function(){
+            img_update();
+        },2*60*1000)
         return false;
         $.post(url,{'last':last,'amount':showNum},function(re){
             svg = $("#svg").html();

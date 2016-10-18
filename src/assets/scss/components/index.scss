@@ -117,12 +117,18 @@ $borderLine:#B2E2F7 !default;
   .case-item{
     padding:3rem;
     position:relative;
-    &:hover .mask-icon{
-      display:none;
+    &:hover img{
+      -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     }
   }
   img{
     width:100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
   }
   .item{
     position:relative;
@@ -170,6 +176,7 @@ $borderLine:#B2E2F7 !default;
     bottom:0;
     width:70%;
     color:#FFF;
+    height:8rem;
   }
 }
 
