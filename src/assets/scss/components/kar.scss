@@ -62,5 +62,28 @@
   }
 }
 .kar-banner3{
-  background:#FDDA94;
+  background: #FED183 url(/assets/img/kar/yellow_bg.jpg) center 30% repeat-x;
+  img{
+    padding:2rem 10rem 10rem 10rem;
+  }
+  .orbit-slide{
+    background:#FFF;
+  }
+  .orbit-caption{
+    background:rgba(255,255,255,.5);
+    color:#777;
+    text-align:center;
+    padding:1rem 3rem;
+  }
+  .orbit-previous,.orbit-next{
+    color:#FED183;
+  }
+}
+
+.orbit-bullets button {
+  width: 2.2rem;
+  height: 0.2rem;
+  margin: 0.1rem;
+  background-color: #cacaca;
+  border-radius: 0%;
 }
