@@ -46,4 +46,13 @@ footer{
 			}
 		}
 	}
+	.th{
+		display: inline-block;
+		padding:0 1rem 1rem 1rem;
+		background:#3A4454;
+		p{
+			text-align: center;
+			margin:0;
+		}
+	}
 }
