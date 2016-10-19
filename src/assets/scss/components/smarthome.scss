@@ -12,8 +12,57 @@
   	line-height: 2.5;
   }
   h3{
-  	color:#28E7F4;
+  	color:#FFF;
   	letter-spacing:0.5em;
   	line-height: 2.5;
+  }
+}
+.special-letter{
+  color:#EB8828;
+}
+.ai-feature{
+  background:#2E2F3F;
+  padding:6rem 0;
+  margin:2rem 0;
+  color:#FFF;
+  .item{
+    padding:1rem;
+    & > div{
+      padding:0.5rem;
+      border:1px solid #454656;
+      height:20rem;
+    }
+    small{
+      color:#ACB0B3;
+    }
+  }
+}
+.home-advantage{
+  background: #FFF url(/assets/img/home/home_gradual.png) center 30% repeat-x;
+  padding:2rem 0;
+}
+.home-dianxinganli{
+  background:#F7F8F9;
+  padding:3rem 0;
+  .item{
+    text-align:center;
+    position:relative;
+    .number{
+      position:absolute;
+      top:0;
+      left:0;
+      color:#EB8828;
+      font-size:2.4em;
+    }
+    .title{
+      text-align:left;
+      color:lighten(#333435,30%);
+      padding:1rem 2rem;
+    }
+    .des{
+      text-align:left;
+      color:lighten(#333435,50%);
+      padding:0.5rem 2rem;
+    }
   }
 }
