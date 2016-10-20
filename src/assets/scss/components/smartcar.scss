@@ -1,11 +1,24 @@
 @import 'mixins/overlay.scss';
 @import 'mixins/clearfixed.scss';
 $orange : #ED892E !default;
+
+.smart-car{
+  .title-area{
+    overflow:hidden;
+    a{
+      position:relative;
+      top:-20px;
+    }
+    img{
+      width:85px;  
+    }
+  }
+}
 .smart-car-banner{
-	background: #333 url(/assets/img/im__banner_chezai.jpg) center 30% repeat-x;
+	background: #333 url(/assets/img/car/im__banner_chezai.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
   position: relative;
-  padding: 12.5rem 0 14.5rem;
+  padding: 14em 0 22rem;
   text-align: center;
   overflow: visible;
   h1{
@@ -19,8 +32,37 @@ $orange : #ED892E !default;
   }
 }
 .smart-car-case{
+  background: #FFF url(/assets/img/home/home_gradual.png) center 30% repeat-x;
+  padding: 2rem 0;  
   .special-letter{
     color:$orange;
   }  
 }
+.chezai-1{
+  position:relative;
+  .mask{
+    @include overlay();
+    background: url(/assets/img/car/uicar.png) center no-repeat;
+  }
+}
+.car-monitor{
+  background: #2E2F3F;
+  padding: 6rem 0;
+  margin: 2rem 0;
+  color: #FFF;
+  .item{
+    text-align:center;
+    ul{
+      padding:0 20px;
+      color:#A8ACAD;
+      text-align:left;
+      li{
+        padding:0.5em 0;
+      }
+    }
+  }
+}
+
+
+
 

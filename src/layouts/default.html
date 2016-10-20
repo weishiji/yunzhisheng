@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
-    <div id="main-page">
+    <div id="main-page" class="{{currentPage}}">
       
       <header class="top-bar-container" data-sticky-container>
         <nav  {{#ifpage 'index'}} class="sticky" data-sticky data-options="anchor: main-page; marginTop: 0; stickyOn: small;" style="width:100%;" {{/ifpage}}>
@@ -24,6 +24,7 @@
                 <li class="title-area">
                   <a href="{{logoLink}}">
                     <img src="{{logoSrc}}" alt='云知声'>  
+                    {{logoTitle}}
                   </a>
                 </li>
                 <li><a href="/">首页</a>
@@ -57,7 +58,7 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
-    {{#ifpage 'index' 'smart_home' 'kar'}}
+    {{#ifpage 'index' 'smart_home' 'kar' 'smart_car'}}
       <footer>
         <div class="row secondary">
           <div class="large-5 columns">
@@ -125,6 +126,16 @@
                     <li><a href="javascript:;">李先生:+86 13220127196<br/>
                         <span style="position:relative;top:8px;">邮&nbsp;&nbsp;&nbsp;箱:lishuanlei@unisound.com</span>
                       </a></li>
+                  </ul>
+                </div>
+              {{/ifpage}}
+              {{#ifpage 'smart_car'}}
+                <div class="small-12 medium-8 columns">
+                  <h5>Unicar方案咨询</h5>
+                  <ul class="menu vertical">
+                    <li><a href="javascript:;">联系人 陈先生</a></li>
+                    <li><a href="javascript:;">电话 180-3816-7537</a></li>
+                    <li><a href="javascript:;">邮箱 chenqiuxian@unisound.com</a></li>
                   </ul>
                 </div>
               {{/ifpage}}

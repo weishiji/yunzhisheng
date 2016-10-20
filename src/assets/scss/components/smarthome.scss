@@ -15,8 +15,14 @@
   }
   h3{
   	color:#FFF;
-  	letter-spacing:0.5em;
+  	letter-spacing:0.1em;
   	line-height: 2.5;
+  }
+  .bingxiang-chat{
+    background:#67DDC5;
+    padding:1rem;
+    color:#FFF;
+    border-radius:10px;
   }
 }
 .special-letter{
@@ -49,6 +55,22 @@
 .home-advantage{
   background: #FFF url(/assets/img/home/home_gradual.png) center 30% repeat-x;
   padding:2rem 0;
+  .columns{
+    text-align:center;
+  }
+  p{
+    text-align:center;
+    color:#808182;
+  }
+  .orbit-container{
+    height:20rem !important;
+    li{
+      height:20rem !important;
+    }
+  }
+  .orbit-caption{
+    background: none;
+  }
 }
 .home-dianxinganli{
   background:#F7F8F9;
