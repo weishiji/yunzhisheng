@@ -50,6 +50,20 @@
 @include motion-ui-animations;
 
 
+table.table-border{
+  border-collapse:collapse;
+}
+table.table-border{
+  border:1px solid #F1F1F1;
+  & td, & th{
+    border:1px solid #F1F1F1;
+  }
+  & tbody tr:nth-child(even){
+    background:none;
+  }
+}
+
+
 @import './components/_header.scss';
 @import './components/_footer.scss';
 @import './components/index.scss';

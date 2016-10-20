@@ -132,6 +132,7 @@ $borderLine:#B2E2F7 !default;
   }
   .item{
     position:relative;
+    overflow:hidden;
     .mask-icon{
       @include overlay();
       background:rgba(0,0,0,.5);

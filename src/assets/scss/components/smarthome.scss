@@ -1,5 +1,7 @@
 @import 'mixins/overlay.scss';
 @import 'mixins/clearfixed.scss';
+
+
 .smart-home-banner{
 	background: #FFF url(/assets/img/home/home_1.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
@@ -27,6 +29,7 @@
   color:#FFF;
   .item{
     padding:1rem;
+    position:relative;
     & > div{
       padding:0.5rem;
       border:1px solid #454656;
@@ -34,6 +37,12 @@
     }
     small{
       color:#ACB0B3;
+    }
+    p.des{
+      position: absolute;
+      left: 9%;
+      bottom: 0.5rem;
+      width: 82%;
     }
   }
 }
