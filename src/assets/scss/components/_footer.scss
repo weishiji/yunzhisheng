@@ -26,6 +26,7 @@ footer{
 		border-top:1px solid #777;
 		p{
 			margin:0;
+			color:#A9ACB0;
 		}
 	}
 	.home-social{
@@ -34,9 +35,9 @@ footer{
 			padding:2.4rem;
 		}
 		.wechat{
-			background-position:-310px -460px;
+			background-position:-324px -460px;
 			&:hover{
-				background-position:-510px -460px;
+				background-position:-524px -460px;
 			}
 		}
 		.webo{
@@ -50,9 +51,18 @@ footer{
 		display: inline-block;
 		padding:0 1rem 1rem 1rem;
 		background:#3A4454;
+		&:hover{
+			color:#A9ACB0;
+		}
 		p{
 			text-align: center;
-			margin:0;
+			margin:0.5rem;
 		}
+	}
+	.footer-sub-title{
+		padding:0 1rem;
+	}
+	.small-line{
+		line-height:0 !important;
 	}
 }

@@ -20,4 +20,10 @@ if($banner.length !== 0){
   $(window).on('scroll',scrollY);
 }
 
-
+console.log($('.wechat'))
+$('.wechat').hover(function(){
+  console.log(123)
+  $('#wechat-code').show();
+},function(){
+  $('#wechat-code').hide();
+})

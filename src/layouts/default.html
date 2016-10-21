@@ -32,9 +32,9 @@
                 <li class="has-submenu"><a href="#">产品与服务</a>
                   <ul class="submenu menu vertical" data-submenu>
                     <li><a href="/smart_home.html">智能家居方案</a></li>
-                    <li><a href="/smart_car.html">职能车载方案</a></li>
-                    <li><a href="#">职能医疗方案</a></li>
-                    <li><a href="#">职能教育方案</a></li>
+                    <li><a href="/smart_car.html">智能车载方案</a></li>
+                    <li><a href="#">智能医疗方案</a></li>
+                    <li><a href="#">智能教育方案</a></li>
                     <li><a href="#">陪伴机器人方案</a></li>
                   </ul>
                 </li>
@@ -61,10 +61,10 @@
     {{#ifpage 'index' 'smart_home' 'kar' 'smart_car'}}
       <footer>
         <div class="row secondary">
-          <div class="large-5 columns">
+          <div class="large-5 columns" style="margin-top:1em;">
             <div class="row">
               <div class="small-6 columns">
-                <a class="th" href="javascript:;">
+                <a class="th" href="javascript:;" style="display: none;" id="wechat-code">
                   <p><small>微信服务号</small></p>
                   <img src="/assets/img/erweima.jpg">
                 </a>
@@ -82,10 +82,10 @@
               </div>
             </div>
           </div>
-          <div class="large-7 columns">
+          <div class="large-7 columns" style="margin-top:1em;">
             <div class="row">
               <div class="small-12 medium-4 columns">
-                <h5>关于我们</h5>
+                <h5 class="footer-sub-title">关于我们</h5>
                 <ul class="menu vertical">
                   <li><a href="">公司简介</a></li>
                   <li><a href="">公司动态</a></li>
@@ -95,7 +95,7 @@
               </div>
               {{#ifpage 'index'}}
               <div class="small-12 medium-8 columns">
-                <h5>方案咨询</h5>
+                <h5 class="footer-sub-title">方案咨询</h5>
                 <ul class="menu vertical">
                   <li><a href="">商务QQ:36545842</a></li>
                   <li><a href="">咨询电话:18102055692</a></li>
@@ -105,7 +105,7 @@
               {{/ifpage}}
               {{#ifpage 'kar'}}
                 <div class="small-12 medium-8 columns">
-                  <h5>KAR方案咨询</h5>
+                  <h5 class="footer-sub-title">KAR方案咨询</h5>
                   <ul class="menu vertical">
                     <li><a href="javascript:;">北京:李先生 13220127196</a></li>
                     <li><a href="javascript:;">上海:孙先生 17740894193</a></li>
@@ -115,23 +115,22 @@
               {{/ifpage}}
               {{#ifpage 'smart_home'}}
                 <div class="small-12 medium-8 columns">
-                  <h5>Unihome咨询方案</h5>
+                  <h5 class="footer-sub-title">Unihome咨询方案</h5>
                   <ul class="menu vertical">
-                    <li><a href="javascript:;">胡先生:+86 18038187996<br/>
-                        <span style="position:relative;top:8px;">邮&nbsp;&nbsp;&nbsp;箱:hutianyi@unisound.com</span>
-                      </a></li>
-                    <li><a href="javascript:;">孙先生:+86 17740894193<br/>
-                        <span style="position:relative;top:8px;">邮&nbsp;&nbsp;&nbsp;箱:sunlie@unisound.com</span>
-                      </a></li>
-                    <li><a href="javascript:;">李先生:+86 13220127196<br/>
-                        <span style="position:relative;top:8px;">邮&nbsp;&nbsp;&nbsp;箱:lishuanlei@unisound.com</span>
-                      </a></li>
+                    <li><a class="small-line" href="javascript:;">胡先生:+86 18038187996</a></li>
+                    <li><a class="small-line" href="javascript:;">邮&nbsp;&nbsp;&nbsp;箱:hutianyi@unisound.com</a></li>
+                    <br/>
+                    <li><a class="small-line" href="javascript:;">孙先生:+86 17740894193<br/></a></li>
+                    <li><a class="small-line" href="javascript:;">邮&nbsp;&nbsp;&nbsp;箱:sunlie@unisound.com</a></li>
+                    <br/>
+                    <li><a class="small-line" href="javascript:;">李先生:+86 13220127196<br/></a></li>
+                    <li><a class="small-line" href="javascript:;">邮&nbsp;&nbsp;&nbsp;箱:lishuanlei@unisound.com</a></li>
                   </ul>
                 </div>
               {{/ifpage}}
               {{#ifpage 'smart_car'}}
                 <div class="small-12 medium-8 columns">
-                  <h5>Unicar方案咨询</h5>
+                  <h5 class="footer-sub-title">Unicar方案咨询</h5>
                   <ul class="menu vertical">
                     <li><a href="javascript:;">联系人 陈先生</a></li>
                     <li><a href="javascript:;">电话 180-3816-7537</a></li>
