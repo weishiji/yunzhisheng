@@ -30,7 +30,7 @@
 }
 .ai-feature{
   background:#2E2F3F;
-  padding:6rem 0;
+  padding:3em 0 6em 0;
   margin:2rem 0;
   color:#FFF;
   .item{
@@ -47,7 +47,7 @@
     p.des{
       position: absolute;
       left: 9%;
-      bottom: 0.5rem;
+      bottom: 1.5em;
       width: 82%;
     }
   }
@@ -86,14 +86,13 @@
       font-size:2.4em;
     }
     .title{
-      text-align:left;
+      text-align:center;
       color:lighten(#333435,30%);
       padding:1rem 2rem;
     }
     .des{
-      text-align:left;
+      text-align:center;
       color:lighten(#333435,50%);
-      padding:0.5rem 2rem;
     }
   }
 }
