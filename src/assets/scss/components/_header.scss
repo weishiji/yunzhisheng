@@ -65,12 +65,12 @@ header{
 }
 
 .title-area{
-    a{
-        padding:0 !important;    
-    }
+    width:20rem;
     a:hover{
         background:none !important;
-
+    }
+    img{
+        height:100%;
     }
 }
 @include breakpoint(small only) {
