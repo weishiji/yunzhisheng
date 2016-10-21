@@ -62,6 +62,12 @@ table.table-border{
     background:none;
   }
 }
+.pull-left{
+	float:left !important;
+}
+.pull-right{
+	float:right !important;
+}
 
 
 @import './components/_header.scss';
