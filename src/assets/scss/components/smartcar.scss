@@ -25,6 +25,14 @@ $orange : #ED892E !default;
   .special-letter{
     color:$orange;
   }  
+  .orbit-caption{
+    background:none;
+    color:#313942;
+    text-align:center;
+  }
+  li.orbit-slide,.orbit-container{
+    height;30em;
+  }
 }
 .chezai-1{
   position:relative;
