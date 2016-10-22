@@ -65,7 +65,6 @@ header{
 }
 
 .title-area{
-    width:20rem;
     a:hover{
         background:none !important;
     }
@@ -77,7 +76,13 @@ header{
    .is-drilldown li.title-area {
       display: none !important;
     }
-  }
+    .marketing-topbar .menu a:hover{
+        background:#0a0a0a !important;
+    }
+    .is-drilldown-submenu-parent > a::after{
+        border-color: transparent transparent transparent #FFF;
+    }
+ }
 
 
 

@@ -56,6 +56,16 @@
   background: #FFF url(/assets/img/home/home_gradual.png) center 30% repeat-x;
   padding:2rem 0;
   margin-top:6rem;
+  .orbit-previous, .orbit-next{
+    top:23%;
+  }
+  @include breakpoint(small only) {
+   .orbit-previous, .orbit-next{
+      top:23%;
+    }
+  }
+
+
   .columns{
     text-align:center;
   }
@@ -64,9 +74,9 @@
     color:#808182;
   }
   .orbit-container{
-    height:20rem !important;
+    height:18rem !important;
     li{
-      height:20rem !important;
+      height:18rem !important;
     }
   }
   .orbit-caption{
