@@ -48,7 +48,7 @@ $orange : #ED892E !default;
   color: #FFF;
   .item{
     text-align:center;
-    height: 30em;
+    //height: 30em;
     overflow: hidden;
     ul{
       padding:0 20px;
@@ -56,6 +56,12 @@ $orange : #ED892E !default;
       text-align:left;
       li{
         padding:0.5em 0;
+        @include clearfix();
+        div{
+          //margin-top:-1.5em;
+          position:relative;
+          top:-1.5em;
+        }
       }
     }
   }
