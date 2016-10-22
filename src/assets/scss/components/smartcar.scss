@@ -2,18 +2,6 @@
 @import 'mixins/clearfixed.scss';
 $orange : #ED892E !default;
 
-.smart-car{
-  .title-area{
-    overflow:hidden;
-    a{
-      position:relative;
-      top:-20px;
-    }
-    img{
-      width:85px;  
-    }
-  }
-}
 .smart-car-banner{
 	background: #333 url(/assets/img/car/im__banner_chezai.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
