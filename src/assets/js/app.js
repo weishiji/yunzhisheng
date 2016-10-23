@@ -27,3 +27,5 @@ $('.wechat').hover(function(){
 },function(){
   $('#wechat-code').hide();
 })
+var $headerDropDown = $('header .is-drilldown');
+$headerDropDown.css('height',$('#main-page').height() + $('footer').height())
