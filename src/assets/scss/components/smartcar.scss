@@ -43,15 +43,35 @@ $orange : #ED892E !default;
 }
 .car-monitor{
   background: #2E2F3F;
-  padding: 6rem 0;
+  padding: 6rem 0 9rem 0;
   margin: 2rem 0 0 0;
   color: #FFF;
+  h4{
+    margin:2rem 0;
+  }
+  .item{
+    text-align:center;
+    overflow:hidden;
+  //   ul{
+  //     li{
+  //       text-align:center;
+  //       a{
+  //         color:#A8ACAD;
+  //         cursor:default;
+  //       }
+  //       small.dot{
+  //         font-size:30%;
+  //         line-height:1;
+  //         padding:5px;
+  //       }
+  //     }
+  //   }
+  // }
   .item{
     text-align:center;
     //height: 30em;
     overflow: hidden;
     ul{
-      padding:0 20px;
       @include breakpoint(small only) {
         padding:0 4em;
       }
@@ -67,6 +87,9 @@ $orange : #ED892E !default;
       }
     }
   }
+}
+.car-partner{
+  margin-bottom:5rem;
 }
 
 
