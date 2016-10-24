@@ -58,7 +58,7 @@
   padding:2rem 0;
   margin-top:6rem;
   .orbit-previous, .orbit-next{
-    top:23%;
+    top:50%;
   }
   @include breakpoint(small only) {
    .orbit-previous, .orbit-next{
@@ -75,18 +75,21 @@
     color:#808182;
   }
   .orbit-container{
-    height:18rem !important;
+    height:24rem !important;
     li{
-      height:18rem !important;
+      height:24rem !important;
     }
   }
   .orbit-caption{
     background: none;
   }
 }
+.uhome-application-product{
+  background:#FFF !important;
+}
 .home-dianxinganli{
   background:#F7F8F9;
-  padding:3rem 0;
+  padding:5rem 0;
   .item{
     text-align:center;
     position:relative;
@@ -171,5 +174,5 @@
   }
 }
 .home-hezuohuoban{
-  margin-bottom:2em;
+  margin-bottom:4rem;
 }

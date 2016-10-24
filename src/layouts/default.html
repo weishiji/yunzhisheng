@@ -34,7 +34,7 @@
                 <li class="title-area">
                   <a href="{{logoLink}}">
                     <!-- <img src="{{logoSrc}}" alt='云知声'>   -->
-                    <img data-interchange="[{{logoSrcSmall}}, small], [{{logoSrc}}, medium], [{{logoSrc}}, large]">
+                    <img data-interchange="[{{logoSrcSmall}}, small], [{{logoSrcSmall}}, medium], [{{logoSrc}}, large]">
                     {{logoTitle}}
                   </a>
                 </li>
@@ -178,6 +178,13 @@
       <script src="{{root}}assets/lib/video-js/video.js"></script>
 
       <script src="{{root}}assets/lib/index.js"></script>
+    {{/ifpage}}
+    {{#ifpage 'smart_home'}}
+      <script src="{{root}}assets/lib/tweenMax.min.js"></script>
+      <script src="{{root}}assets/lib/d3.min.js"></script>
+      <script src="{{root}}assets/lib/pixi.min.js"></script>
+
+      <script src="{{root}}assets/lib/home.js"></script>
     {{/ifpage}}
   </body>
 </html>

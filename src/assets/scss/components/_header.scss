@@ -70,6 +70,7 @@ header{
     }
     img{
         height:100%;
+        padding:0.2rem 0;
     }
 }
 @include breakpoint(small only) {
