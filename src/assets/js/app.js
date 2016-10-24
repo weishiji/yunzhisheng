@@ -1,6 +1,5 @@
 $(document).foundation();
 
-
 var $banner = $('div[data-banner]');
 if($banner.length !== 0){
   $topMenu = $('#main-menu');

@@ -65,4 +65,10 @@ footer{
 	.small-line{
 		line-height:0 !important;
 	}
+	.case-footer-type{
+		a:hover,a:active,a:visited,a:focus{
+			color:#A9ACB0 !important;
+			cursor: default;
+		}
+	}
 }
