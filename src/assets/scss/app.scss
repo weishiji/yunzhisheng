@@ -50,18 +50,51 @@
 @include motion-ui-animations;
 
 
-table.table-border{
-  border-collapse:collapse;
+
+
+// table.table-border{
+//   border-collapse:collapse;
+// }
+// table.table-border{
+//   border:1px solid #ddd;
+//   & td, & th{
+//     border:1px solid #ddd;
+//   }
+//   & tbody tr:nth-child(even){
+//     background:none;
+//   }
+// }
+
+table.table-border {
+    border-collapse: collapse;
 }
-table.table-border{
-  border:1px solid #ddd;
-  & td, & th{
-    border:1px solid #ddd;
-  }
-  & tbody tr:nth-child(even){
-    background:none;
-  }
+table thead, table tbody, table tfoot{
+  background:#FFF;
+  border:none;
 }
+table.table-border td, table.table-border th {
+    border: 1px solid #ddd;
+    background:#FFF;
+}
+table.table-border tr:first-child td {
+    border-top: none;
+}
+table.table-border tr:last-child td {
+    border-bottom: none;
+}
+table.table-boder tr:first-child td{
+  border-top:none;
+}
+table.table-border tr td:first-child,
+table.table-border tr th:first-child {
+    border-left: none;
+}
+table.table-border tr td:last-child,
+table.table-border tr th:last-child {
+    border-right: none;
+}
+
+
 .pull-left{
 	float:left !important;
 }
