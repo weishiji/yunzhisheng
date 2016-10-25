@@ -35,7 +35,10 @@ $borderLine:#B2E2F7 !default;
     margin-bottom:3rem;
     position:relative;
     z-index:9;
-    background:#FFF url(/assets/img/home.png) no-repeat;
+    text-align:center;
+    background:#FFF;
+    padding-top:1em;
+    //background:#FFF url(/assets/img/home.png) no-repeat;
     .ai-title{
       position:absolute;
       bottom:0;
