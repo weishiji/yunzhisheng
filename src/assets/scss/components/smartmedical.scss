@@ -18,3 +18,28 @@ $bluesky : #59C0F1 !default;
 .smart-medical-video{
 
 }
+.medical-just-say-it{
+  .item{
+    padding:2rem;
+    &>div{
+      border:1px solid #DDD;
+      padding:3rem 0 1rem 0;
+      position:relative;
+      .title{
+        line-height: 5;
+      }
+      &:hover{
+        .mask{
+          display:block;  
+        }
+      }
+      .mask{
+        @include overlay();
+        background:rgba(105,176,210,.9);
+        display: none;
+        padding:0.5em;
+        color:#FFF;
+      }
+    }
+  }
+}
