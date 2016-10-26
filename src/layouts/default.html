@@ -69,7 +69,7 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
-    {{#ifpage 'index' 'smart_home' 'kar' 'smart_car' 'smart_edu' 'smart_medical'}}
+    {{#ifpage 'index' 'smart_home' 'kar' 'smart_car' 'smart_edu' 'smart_medical' 'household'}}
       <footer>
         <div class="row secondary">
           <div class="large-5 columns" style="margin-top:1em;">
@@ -124,7 +124,7 @@
                   </ul>
                 </div>
               {{/ifpage}}
-              {{#ifpage 'smart_home'}}
+              {{#ifpage 'smart_home' 'household'}}
                 <div class="small-12 medium-8 columns case-footer-type">
                   <h5 class="footer-sub-title">Unihome咨询方案</h5>
                   <ul class="menu vertical">

@@ -1,6 +1,36 @@
 @import 'mixins/overlay.scss';
 @import 'mixins/clearfixed.scss';
+$houseGray:#6D7176 !default;
+.my-menu-text{
+  li a{
+    line-height:1.5;
+    position:relative;
+  }
+  a:hover,a:visited,a:active,a:focus,a{
+    color:$houseGray;  
+    cursor:default;
 
+  }
+}
+ul.my-list-style li a:before{
+    content: "♦"; /* Insert content that looks like bullets */
+    color: $houseGray; /* Or a color you prefer */
+    position:absolute;
+    left:0;
+}
+
+.household-leshi-tv,.household-huadi,.household-light,.household-robot,.household-robby{
+  padding:5rem 0 1rem 0;
+  .title{
+    img{
+      position:relative;
+      top:-7px;
+    }
+  }
+  .sub-title{
+    padding:0.7rem 1rem;
+  }
+}
 
 .household-banner{
 	background: #FFF url(/assets/img/home/home_1.jpg) center 30% repeat-x;
@@ -20,5 +50,17 @@
   
 }
 .household-leshi-tv{
-  padding:5rem 0;
+  color:$houseGray;
+  ul li a{
+    line-height:1.5;
+  } 
+}
+.house-image-banner{
+  padding-top:16%;
+  text-align:center;
+}
+.household-huadi{
+}
+.household-robby{
+  padding-bottom:7rem;
 }
