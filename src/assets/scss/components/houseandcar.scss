@@ -22,6 +22,7 @@ ul.my-list-style li a:before{
 .household-leshi-tv,.household-huadi,.household-light,.household-robot,.household-robby{
   padding:5rem 0 1rem 0;
   .title{
+    padding-left:12%;
     img{
       position:relative;
       top:-7px;
@@ -64,3 +65,10 @@ ul.my-list-style li a:before{
 .household-robby{
   padding-bottom:7rem;
 }
+//智能汽车三级页面样式
+.sub-car-page{
+  background-color:#FEFFFF;
+}
+
+
+
