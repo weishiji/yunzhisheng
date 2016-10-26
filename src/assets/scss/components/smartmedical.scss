@@ -247,7 +247,27 @@ hr.long-line{
 .medical-partner{
   padding-bottom:3rem;
 }
-
+.top-dot-line,.center-dot-line,.bottom-dot-line{
+  padding-bottom:4rem;
+  position:relative;
+  .title{
+    position:absolute;
+    right:0;
+    font-size:1.5em;
+    color:$medicalSky;
+  }
+}
+.top-dot-line{
+  .title{
+    top:-1.5em;
+  }
+}
+.center-dot-line .title{
+  top:-0.25em;
+}
+.bottom-dot-line .title{
+  top:-0.8em;
+}
 
 
 
