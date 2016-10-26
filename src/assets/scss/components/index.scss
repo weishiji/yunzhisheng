@@ -195,4 +195,27 @@ $borderLine:#B2E2F7 !default;
     height: 100%;
   }
 }
+.home-video-cover{
+  width:100%;
+  position:relative;
+  padding-top:60%;
+  background: #074E68 url(/assets/img/index/video.jpg) center;
+  background-size:cover;
+  .mask{
+    @include overlay();
+    color:#FFF;
+    padding-top:22%;
+    .play-btn{
+      padding:1em 2rem;
+      border-radius:2rem;
+      color:#FFF;
+      border:1px solid #ddd;
+      margin-top:2rem;
+      display:inline-block;
 
+      &:hover{
+        border-color:#FFF;
+      }
+    }
+  }
+}

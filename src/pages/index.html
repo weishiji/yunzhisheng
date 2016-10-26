@@ -58,9 +58,28 @@ currentPage: index-page
     </div>
   </div>
 </div>
-<div class="home-video">
+<div class="home-video-cover">
+  <div class="mask">
+    <h3 class="text-center">云知声的愿景是“智享未来”</h3>
+    <h5 class="text-center">人工智能是一切服务的基础</h5>
+    <p class="text-center">
+      <a class="play-btn" data-toggle="video-modal" aria-controls="video-modal" aria-haspopup="true">
+        ▶︎ PLAY VIDEO
+      </a>
+    </p>  
+  </div>
+</div>
+<div class="large reveal" id="video-modal" data-reveal>
+  <p>OH I'M SO FUUUUL</p>
+  <img src="http://placekitten.com/1920/1280" alt="Intropsective Cage">
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="home-video" style="display: none;">
     <video id="really-cool-video" class="video-js vjs-default-skin" controls
-       preload="auto" poster="really-cool-video-poster.jpg"
+       preload="false" poster="really-cool-video-poster.jpg"
        data-setup='{}'>
         <source src="/assets/video/oceans.mp4" type="video/mp4">
         <p class="vjs-no-js">
