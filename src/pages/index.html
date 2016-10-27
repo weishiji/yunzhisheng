@@ -18,11 +18,24 @@ currentPage: index-page
 </div>
 <div class="close-loop">
   <div class="row">
-    <div class="loop-line"></div>
+    <div class="loop-line">
+      <span class="right-arrow">▼&nbsp;&nbsp;<span style="color: #333;">数据</span></span>
+      <span class="left-arrow top">▲</span>
+      <span class="left-arrow bottom">▲</span>
+    </div>
+    <div class="left-tooltip">
+      <div class="content"></div>
+      <div class="left-top">
+        
+      </div>
+      <div class="right-bottom">
+        
+      </div>
+    </div>
   </div>
   <div class="row">
     <div class="large-2 medium-3 small-4 small-centered columns">
-      <div class="ai-item one">
+      <div class="ai-item one" data-key="application">
         <img src="/assets/img/index/close_1.png">
         <p class="ai-title">物联网(LOT)应用</p>
       </div>
@@ -31,11 +44,11 @@ currentPage: index-page
   </div>  
   <div class="row">
     <div class="large-4 medium-6 small-8 small-centered columns">
-      <div class="ai-item two brain">
+      <div class="ai-item two brain" data-key="brain">
         <img src="/assets/img/index/close_2.png">
         <p class="ai-title">认知智能</p>
       </div>
-      <div class="ai-item two people">
+      <div class="ai-item two people" data-key="people">
         <img src="/assets/img/index/close_3.png">
         <p class="ai-title">感知智能</p>
       </div>
@@ -43,15 +56,15 @@ currentPage: index-page
   </div>  
   <div class="row">
     <div class="large-6 medium-9 small-12 small-centered columns">
-      <div class="ai-item three study">
+      <div class="ai-item three study" data-key="study">
         <img src="/assets/img/index/close_4.png">
         <p class="ai-title">机器学习</p>
       </div>
-      <div class="ai-item three cloud">
+      <div class="ai-item three cloud" data-key="cloud">
         <img src="/assets/img/index/close_5.png">
         <p class="ai-title">云计算</p>
       </div>
-      <div class="ai-item three da">
+      <div class="ai-item three da" data-key="da">
         <img src="/assets/img/index/close_6.png">
         <p class="ai-title">大数据</p>
       </div>
@@ -65,18 +78,21 @@ currentPage: index-page
     <p class="text-center">
       <a class="play-btn" data-toggle="video-modal" aria-controls="video-modal" aria-haspopup="true">
         ▶︎ PLAY VIDEO
+        <input type="hidden" name="vid" value="XMTczNDkzNTI2OA==">
       </a>
     </p>  
   </div>
 </div>
 <div class="large reveal" id="video-modal" data-reveal>
-  <p>OH I'M SO FUUUUL</p>
-  <img src="http://placekitten.com/1920/1280" alt="Intropsective Cage">
+  <p>云知声-智享未来</p>
+  <div id="youku-video">
+    
+  </div>
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-
+<!-- 
 <div class="home-video" style="display: none;">
     <video id="really-cool-video" class="video-js vjs-default-skin" controls
        preload="false" poster="really-cool-video-poster.jpg"
@@ -89,12 +105,12 @@ currentPage: index-page
     </video>
   <div class="row">
     
-    <!-- <div class="flex-video widescreen vimeo">
+    <div class="flex-video widescreen vimeo">
       <iframe src="/assets/video/oceans.mp4" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-    </div>   -->
+    </div>  
   </div>
-  
 </div>
+ -->
 <div class="home-business">
   <div class="row">
     <div class="small-12 columns">
@@ -104,13 +120,9 @@ currentPage: index-page
   <div class="row">
     <div class="small-12 columns medium-6 case-item">
       <div class="item">
-        <!-- <div class="mask-icon">
-          <p class="sm-home">
-            <span></span>
-            <b>智能家居</b>
-          </p>  
-        </div> -->
-        <img src="/assets/img/index/yewu1.jpg"> 
+        <a href="/smart_home.html">
+          <img src="/assets/img/index/yewu1.jpg" /> 
+        </a>
       </div>
       <div class="footer">
         <p>首款人工智能芯片</p>

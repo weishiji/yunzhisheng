@@ -27,6 +27,34 @@ $borderLine:#B2E2F7 !default;
   & .row{
     position:relative;
   }
+  .left-tooltip{
+    border:1px solid $borderLine;
+    padding:0.5rem;
+    width:16rem;
+    height:13rem;
+    position:absolute;
+    top:0em;
+    left:2rem;
+    display:none;
+    .left-top{
+      position:absolute;
+      top:-2rem;
+      left:-2rem;
+      border-right:1px solid $borderLine;
+      border-bottom:1px solid $borderLine;
+      width:2rem;
+      height:2rem;
+    }
+    .right-bottom{
+      position:absolute;
+      top: 12.9rem;
+      left: 15.9rem;
+      border-left:1px solid $borderLine;
+      border-top:1px solid $borderLine;
+      width:2rem;
+      height:2rem;
+    }
+  }
   .ai-item{
     height:9rem;
     border:1px solid $borderLine;
@@ -94,6 +122,24 @@ $borderLine:#B2E2F7 !default;
     background-position: 0px 0px, 100% 23.9rem, 0px 100%, 100% 0px;
     padding: 10px;
     animation: border-dance 4s infinite linear;
+    .right-arrow{
+      right:-50px;
+      top:12rem;
+      position:absolute;
+      color:#1AA1E5;
+    }
+    .left-arrow{
+      &.top{
+        top:5rem;
+      }
+      &.bottom{
+        top:17rem;
+      }
+      left:-7px;
+      position:absolute;
+      color:#1AA1E5; 
+    }
+    
   }
   @keyframes border-dance {
     0% {

@@ -180,6 +180,13 @@
         </div>
       </footer>
     {{/ifpage}}
+
+    {{#ifpage 'index' 'smart_medical'}}    
+      <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+    {{/ifpage}}
+
+    <script src="{{root}}assets/js/app.js"></script>
+
     {{#ifpage 'index'}}
       <script src="{{root}}assets/lib/tweenMax.min.js"></script>
       <script src="{{root}}assets/lib/d3.min.js"></script>
@@ -188,7 +195,6 @@
       <link href="{{root}}assets/lib/video-js/video.css" rel="stylesheet">
       <script src="{{root}}assets/lib/video-js/video.js"></script>
       -->
-      <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
       <script src="{{root}}assets/lib/index.js"></script>
     {{/ifpage}}
     {{#ifpage 'smart_home'}}
@@ -198,9 +204,5 @@
 
       <script src="{{root}}assets/lib/home.js"></script>
     {{/ifpage}}
-    {{#ifpage 'smart_medical'}}
-      <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
-    {{/ifpage}}
-    <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
