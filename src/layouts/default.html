@@ -40,7 +40,7 @@
                 </li>
                 <li><a href="/">首页</a>
                 </li>
-                <li class="has-submenu"><a href="#">产品与服务</a>
+                <li class="has-submenu"><a>产品与服务</a>
                   <ul class="submenu menu vertical" data-submenu>
                     <li><a href="/smart_home.html">智能家居方案</a></li>
                     <li><a href="/smart_car.html">智能车载方案</a></li>
@@ -53,10 +53,10 @@
                 </li>
                 <li><a href="#">核心技术</a></li>
                 <li><a href="#">开发者网站</a></li>
-                <li class="has-submenu"><a href="#">关于我们</a>
+                <li class="has-submenu"><a>关于我们</a>
                   <ul class="submenu menu vertical" data-submenu>
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
+                    <li><a href="/company_profile.html">公司简介</a></li>
+                    <li><a href="/progress.html">发展历程</a></li>
                     <li><a href="#">Three</a></li>
                   </ul>
                 </li>
@@ -71,7 +71,7 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
-    {{#ifpage 'index' 'smart_home' 'kar' 'smart_car' 'smart_edu' 'smart_medical' 'household' 'sub_car'}}
+    {{#ifpage 'index' 'smart_home' 'kar' 'smart_car' 'smart_edu' 'smart_medical' 'household' 'sub_car' 'company_profile' 'progress'}}
       <footer>
         <div class="row secondary">
           <div class="large-5 columns" style="margin-top:1em;">
@@ -106,7 +106,7 @@
                   <li><a href="">联系我们</a></li>
                 </ul>
               </div>
-              {{#ifpage 'index'}}
+              {{#ifpage 'index' 'company_profile' 'progress'}}
               <div class="small-12 medium-8 columns case-footer-type">
                 <h5 class="footer-sub-title">方案咨询</h5>
                 <ul class="menu vertical">

@@ -1,0 +1,91 @@
+@import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+
+//发展历程
+
+$timeline:#00BFAC !default;
+$timeColor:#87D4C8 !default;
+.progress-banner{
+ 	background: #A0A2A1 url(/assets/img/aboutus/fazhlich1.jpg) center 30% repeat-x;
+  background-size:cover;
+  position: relative;
+  padding: 8.5rem 0 10.5rem;
+  text-align: center;
+  overflow: visible;
+  color:#FFF;
+  h1{
+  	font-size:5em;
+  	letter-spacing:0.5em;
+  }
+  h2{
+  	letter-spacing: 1em;
+  }
+}
+.time-line{
+	&>.row{
+		padding:1rem 0;
+	}
+	.content{
+		position:relative;
+		color:#5B5B5C;
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.line{
+		position:absolute;
+		left:-5.6%;
+		border-left:2px solid $timeline;
+		width:0;
+		height: 350%;
+		top:-1rem;
+	}
+	.dot{
+		text-align:center;
+	}
+	.time{
+		text-align:right;
+		color:$timeColor;
+	}
+}
+//公司简介
+$profileBlue:#54C0F0 !default;
+$profileText:#5A5F64 !default;
+.company-profile-banner{
+	background: #387A97 url(/assets/img/aboutus/jianjie1.jpg) center 30% repeat-x;
+  background-size:cover;
+  position: relative;
+  padding: 8.5rem 0 10.5rem;
+  text-align: center;
+  overflow: visible;
+  color:#FFF;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.5em;
+  	color:$profileBlue;
+  }
+  h2{
+  	line-height:4;
+  }
+}
+.company-profile-page{
+	.title{
+		text-align:center;
+		padding:4rem 0 1.5rem 0;
+		color:#FFF;
+		&.blue{
+			color:$profileBlue;
+		}
+	}
+	.profile-content{
+		color:$profileText;
+		p{
+			text-indent:2em;
+		}
+	}
+}
+.profile-hope{
+	background: #9AD5ED url(/assets/img/aboutus/jianjie2.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding:3rem 0;
+}
