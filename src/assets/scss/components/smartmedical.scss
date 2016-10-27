@@ -15,6 +15,25 @@ $medicalSky : #34B0E9 !default;
 }
 
 .smart-medical-video{
+  .video-content{
+    position:relative;
+   .mask{
+      @include overlay();
+      padding-top:15rem;
+      .play-btn{
+        padding:1em 2rem;
+        border-radius:2rem;
+        color:#FFF;
+        border:1px solid #FEFEFD;
+        margin-top:2rem;
+        display:inline-block;
+
+        &:hover{
+          border-color:#FFF;
+        }
+      }
+    }
+  }
 
 }
 .medical-just-say-it{

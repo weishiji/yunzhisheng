@@ -46,7 +46,9 @@
                     <li><a href="/smart_car.html">智能车载方案</a></li>
                     <li><a href="/smart_medical.html">智能医疗方案</a></li>
                     <li><a href="/smart_edu.html">智能教育方案</a></li>
-                    <li><a href="#">陪伴机器人方案</a></li>
+                    <li><a href="/household.html">家居</a></li>
+                    <li><a href="/sub_car.html">汽车</a></li>
+                    <li><a href="/kar.html">KAR</a></li>
                   </ul>
                 </li>
                 <li><a href="#">核心技术</a></li>
@@ -178,15 +180,15 @@
         </div>
       </footer>
     {{/ifpage}}
-    <script src="{{root}}assets/js/app.js"></script>
     {{#ifpage 'index'}}
       <script src="{{root}}assets/lib/tweenMax.min.js"></script>
       <script src="{{root}}assets/lib/d3.min.js"></script>
       <script src="{{root}}assets/lib/pixi.min.js"></script>
-
+      <!-- 
       <link href="{{root}}assets/lib/video-js/video.css" rel="stylesheet">
       <script src="{{root}}assets/lib/video-js/video.js"></script>
-
+      -->
+      <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
       <script src="{{root}}assets/lib/index.js"></script>
     {{/ifpage}}
     {{#ifpage 'smart_home'}}
@@ -196,5 +198,9 @@
 
       <script src="{{root}}assets/lib/home.js"></script>
     {{/ifpage}}
+    {{#ifpage 'smart_medical'}}
+      <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+    {{/ifpage}}
+    <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
