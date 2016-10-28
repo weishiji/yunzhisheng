@@ -81,6 +81,8 @@ $profileText:#5A5F64 !default;
 		color:$profileText;
 		p{
 			text-indent:2em;
+			margin-bottom:0;
+			line-height:2.4;
 		}
 	}
 }
@@ -88,4 +90,86 @@ $profileText:#5A5F64 !default;
 	background: #9AD5ED url(/assets/img/aboutus/jianjie2.jpg) center 30% repeat-x;
   background-size:cover;
   padding:3rem 0;
+}
+//合作伙伴
+.partner-banner{
+	background: #9AD5ED url(/assets/img/aboutus/huoban.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.5em;
+  }
+  h2{
+  	letter-spacing:0.5em;
+  }
+}
+.partner-text{
+	color:$profileText;
+	padding:5rem 0;
+}
+//联系我们
+.contact-us-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/lianxi.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  margin-bottom:5rem;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.3em;
+  }
+  h3{
+  	letter-spacing:0.2em;
+  }
+}
+.map-content{
+	position:relative;
+	&>div{
+		position:absolute;
+		left:2rem;
+		color:#FFF;
+		top:0;
+		background:#78CCF1;
+		padding:0.5rem;
+		p{
+			margin-bottom:0.5rem;
+		}
+	}
+}
+
+.contact-type{
+	padding-bottom:5rem;
+	.contact-title{
+		color:$profileBlue;
+		padding:1rem 0 0 0;
+	}	
+	.small-6{
+		padding:1rem;
+	}
+	p{
+		margin-bottom:0.5rem;
+	}
+	hr{
+		margin-top:0.5rem;
+	}
+}
+//加入我们
+.join-us-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/shezhao.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  margin-bottom:5rem;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.3em;
+  }
+  h3{
+  	letter-spacing:0.2em;
+  }
 }

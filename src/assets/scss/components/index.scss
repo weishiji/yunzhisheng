@@ -67,6 +67,9 @@ $borderLine:#B2E2F7 !default;
     background:#FFF;
     padding-top:1em;
     //background:#FFF url(/assets/img/home.png) no-repeat;
+    &:hover{
+      //color:#f4fcff;
+    } 
     .ai-title{
       position:absolute;
       bottom:0;
@@ -75,6 +78,7 @@ $borderLine:#B2E2F7 !default;
       text-align:center;
       margin-bottom:0;
       line-height:2em;
+
     }
     &.one{
       width:100%;
