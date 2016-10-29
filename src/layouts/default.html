@@ -42,12 +42,12 @@
                 </li>
                 <li class="has-submenu"><a>产品与服务</a>
                   <ul class="submenu menu vertical" data-submenu>
-                    <li><a href="/smart_home.html">智能家居方案</a></li>
-                    <li><a href="/smart_car.html">智能车载方案</a></li>
-                    <li><a href="/smart_medical.html">智能医疗方案</a></li>
-                    <li><a href="/smart_edu.html">智能教育方案</a></li>
+                    <li><a href="/unihome.html">智能家居方案</a></li>
+                    <li><a href="/unicar.html">智能车载方案</a></li>
+                    <li><a href="/unihealth.html">智能医疗方案</a></li>
+                    <li><a href="/uniedu.html">智能教育方案</a></li>
                     <li><a href="/household.html">家居</a></li>
-                    <li><a href="/sub_car.html">汽车</a></li>
+                    <li><a href="/univehicle.html">汽车</a></li>
                     <li><a href="/kar.html">KAR</a></li>
                   </ul>
                 </li>
@@ -55,7 +55,7 @@
                 <li><a href="#">开发者网站</a></li>
                 <li class="has-submenu"><a>关于我们</a>
                   <ul class="submenu menu vertical" data-submenu>
-                    <li><a href="/company_profile.html">公司简介</a></li>
+                    <li><a href="/company-profile.html">公司简介</a></li>
                     <li><a href="/progress.html">发展历程</a></li>
                     <li><a href="/partner.html">合作伙伴</a></li>
                     <li><a href="/contact-us.html">联系我们</a></li>
@@ -73,7 +73,7 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
-    {{#ifpage 'index' 'smart_home' 'kar' 'smart_car' 'smart_edu' 'smart_medical' 'household' 'sub_car' 'company_profile' 'progress' 'partner' 'contact-us' 'join-us'}}
+    {{#ifpage 'index' 'unihome' 'kar' 'unicar' 'uniedu' 'unihealth' 'household' 'univehicle' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us'}}
       <footer>
         <div class="row secondary">
           <div class="large-5 columns" style="margin-top:1em;">
@@ -108,7 +108,7 @@
                   <li><a href="">联系我们</a></li>
                 </ul>
               </div>
-              {{#ifpage 'index' 'company_profile' 'progress' 'partner' 'contact-us' 'join-us'}}
+              {{#ifpage 'index' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us'}}
               <div class="small-12 medium-8 columns case-footer-type">
                 <h5 class="footer-sub-title">方案咨询</h5>
                 <ul class="menu vertical">
@@ -128,7 +128,7 @@
                   </ul>
                 </div>
               {{/ifpage}}
-              {{#ifpage 'smart_home' 'household'}}
+              {{#ifpage 'unihome' 'household'}}
                 <div class="small-12 medium-8 columns case-footer-type">
                   <h5 class="footer-sub-title">Unihome咨询方案</h5>
                   <ul class="menu vertical">
@@ -143,7 +143,7 @@
                   </ul>
                 </div>
               {{/ifpage}}
-              {{#ifpage 'smart_car' 'sub_car'}}
+              {{#ifpage 'unicar' 'univehicle'}}
                 <div class="small-12 medium-8 columns case-footer-type">
                   <h5 class="footer-sub-title">Unicar方案咨询</h5>
                   <ul class="menu vertical">
@@ -153,7 +153,7 @@
                   </ul>
                 </div>
               {{/ifpage}}
-              {{#ifpage 'smart_edu'}}
+              {{#ifpage 'uniedu'}}
                 <div class="small-12 medium-8 columns case-footer-type">
                   <h5 class="footer-sub-title">教育方案咨询</h5>
                   <ul class="menu vertical">
@@ -162,7 +162,7 @@
                   </ul>
                 </div>
               {{/ifpage}}
-              {{#ifpage 'smart_medical'}}
+              {{#ifpage 'unihealth'}}
                 <div class="small-12 medium-8 columns case-footer-type">
                   <h5 class="footer-sub-title">医疗方案咨询</h5>
                   <ul class="menu vertical">
@@ -183,7 +183,7 @@
       </footer>
     {{/ifpage}}
 
-    {{#ifpage 'index' 'smart_medical'}}    
+    {{#ifpage 'index' 'unihealth'}}    
       <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
     {{/ifpage}}
 
@@ -199,7 +199,7 @@
       -->
       <script src="{{root}}assets/lib/index.js"></script>
     {{/ifpage}}
-    {{#ifpage 'smart_home'}}
+    {{#ifpage 'unihome'}}
       <script src="{{root}}assets/lib/tweenMax.min.js"></script>
       <script src="{{root}}assets/lib/d3.min.js"></script>
       <script src="{{root}}assets/lib/pixi.min.js"></script>
