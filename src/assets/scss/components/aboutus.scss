@@ -244,3 +244,49 @@ $profileText:#5A5F64 !default;
 		
 	}
 }
+//新闻动态
+.news-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/news.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.3em;
+  }
+  h3{
+  	letter-spacing:0.2em;
+  }
+}
+.news-media{
+	padding:3rem 0;
+}
+//新闻详情
+.new-page{
+	background-color:#F0F5F8;
+}
+.new-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/new.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding-bottom:30%;
+  color:#FFF;
+  text-align:center;
+}
+.new-content{
+	background-color:#FFF;
+	padding:2rem 3em 5rem 3em;
+	position:relative;
+	top:-8rem;
+	p.content{
+		text-indent:2em;
+		color:$profileText;
+		font-size:80%;
+		line-height:2.4;
+	}
+	.sub-title{
+		border-left:2px solid $profileBlue;
+		padding-left:0.6em;
+		color:$profileText;
+	}
+}
