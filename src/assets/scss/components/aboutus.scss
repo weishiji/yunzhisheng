@@ -198,7 +198,49 @@ $profileText:#5A5F64 !default;
 	}
 }
 .zhaopin-content{
+	color:$profileText;
 	&>div{
-		border:none;	
+		border:none;
+		p{
+			text-indent:2em;
+			line-height:2.4;
+		}	
+		.title{
+			color:$profileBlue;
+			padding:2rem 0;
+		}
+	}
+	.accordion-title{
+		color:$profileText;
+		font-size:1em;
+		border-bottom:1px solid #e6e6e6;
+		border-top:none;
+		border-left:none;
+		border-right:none;
+		padding:1em;
+		&:hover,&:visited,&:focus,&:active{
+			background:$profileBlue;
+			color:#FFF;
+		}
+		.work-area{
+			position: absolute;
+	    right: 2rem;
+	    top: 50%;
+	    margin-top: -0.5rem;
+		}
+	}
+	.accordion-content{
+		border:none;
+		padding:1rem;
+		section{
+			border:2px solid $profileBlue;
+			padding:1rem;
+			p{
+				color:$profileText;
+				line-height:1;
+				text-indent:0;
+			}	
+		}
+		
 	}
 }
