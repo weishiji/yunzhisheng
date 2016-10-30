@@ -269,3 +269,15 @@ $borderLine:#B2E2F7 !default;
     }
   }
 }
+.kar-advertising{
+  background:url(/assets/img/kar/kar_1.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding-bottom:20%;
+  position:relative;
+  .mask{
+    @include overlay();
+    color:#FFF;
+    padding-top:3%;
+    text-indent:30%;
+  }
+}
