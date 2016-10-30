@@ -34,7 +34,7 @@ if(window.YKU){
     client_id: '8aed8aeca16cd366',
     vid: _vid,
     width: '100%',
-    height: '600',
+    height: '500',
     styleid: '0',
     autoplay: true,
     newPlayer: true
