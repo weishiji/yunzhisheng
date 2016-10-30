@@ -5,6 +5,7 @@ $houseGray:#6D7176 !default;
   li a{
     line-height:1.5;
     position:relative;
+    padding: 0.2rem 1rem;
   }
   a:hover,a:visited,a:active,a:focus,a{
     color:$houseGray;  
@@ -22,7 +23,6 @@ ul.my-list-style li a:before{
 .household-leshi-tv,.household-huadi,.household-light,.household-robot,.household-robby{
   padding:5rem 0 1rem 0;
   .title{
-    padding-left:12%;
     img{
       position:relative;
       top:-7px;
