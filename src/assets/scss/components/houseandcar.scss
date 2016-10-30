@@ -21,15 +21,17 @@ ul.my-list-style li a:before{
 }
 
 .household-leshi-tv,.household-huadi,.household-light,.household-robot,.household-robby{
-  padding:5rem 0 1rem 0;
+  padding:5rem 0 0rem 0;
   .title{
+    color:#4E555D;
     img{
       position:relative;
       top:-7px;
     }
   }
   .sub-title{
-    padding:0.7rem 1rem;
+    padding:0.5rem 1rem;
+    color:#4E555D;
   }
 }
 
