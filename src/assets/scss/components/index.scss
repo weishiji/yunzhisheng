@@ -24,7 +24,14 @@ $borderLine:#B2E2F7 !default;
     @include overlay();
   }
 }
-
+.yun-duan-xin{
+  width:100%;
+  padding-bottom:60%;
+  position:relative;
+  #canvas-container{
+    @include overlay();
+  }
+}
 .close-loop{
   @include clearfix();
   & .row{

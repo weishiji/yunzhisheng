@@ -706,9 +706,9 @@ particlesJS("particles-js-2", {
   "retina_detect": true
 });
 
-// new Vivus('my-svg', {duration: 200}, function(){
-//     console.log('hello world')
-// });
+new Vivus('my-svg', {duration: 200}, function(){
+    console.log('hello world')
+});
 
 
 

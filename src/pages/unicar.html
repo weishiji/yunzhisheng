@@ -360,4 +360,126 @@ logoLink: /
 
 	</div>
 </div>
+<div class="yun-duan-xin">
+	<div id="canvas-container">
+		<canvas id="myCanvas"></canvas>	
+	</div>
+</div>
+<script type="text/javascript">
+	window.RAF = (function(){
+	    return  window.requestAnimationFrame   ||
+	        window.webkitRequestAnimationFrame ||
+	        window.mozRequestAnimationFrame    ||
+	        window.oRequestAnimationFrame      ||
+	        window.msRequestAnimationFrame     ||
+	        function(callback){
+	            window.setTimeout(callback, 1000 / 60);
+	        }
+	}());
+	var Stage = (function(){
+		var imageSrc = {
+			'xin' : '/assets/img/index/circle_1.png'
+			,'yun' : '/assets/img/index/circle_2.png'
+			,'duan' : '/assets/img/index/circle_3.png'
+		}
+		var container = document.getElementById('canvas-container');
+		var _startGame = function(){
+			var imageObject = {},srcArr = new Array(),itemArr = new Array(),self = this;
+			for(var item in imageSrc){
+				srcArr.push(imageSrc[item])
+				itemArr.push(item)
+			}
+			var len = srcArr.length;
+			var imageLoad = function(i){
+				if(srcArr[i]){
+					var img = new Image()
+					img.src = srcArr[i]
+					img.onload = function(){
+						imageObject[itemArr[i]] = this;
+						imageLoad(++i)
+						if(i !== len){return}
+						self.init(imageObject);
 
+					}
+				}
+			}	
+			imageLoad(0)
+		}
+		var _bindEvt = function(){
+			var self = this;
+			if(window.attachEvent) {
+			    window.attachEvent('onresize', function() {
+		        self.resetStage();
+			    });
+			}
+			else if(window.addEventListener) {
+			    window.addEventListener('resize', function() {
+		        self.resetStage();
+			    }, true);
+			}
+			else {
+			    //The browser does not support Javascript event binding
+			}
+
+		}
+		function stage(){
+			this.canvas = document.getElementById("myCanvas");
+			this.ctx = this.canvas.getContext("2d");
+			this.imageWidth = 631;
+			this.imageHeight = 552;
+			this.resetStage();
+			_startGame.call(this);
+			
+			_bindEvt.call(this);
+		}
+		stage.prototype.resetStage = function(){
+			this.canvasWidth = container.offsetWidth;
+    	this.canvasHeight = container.offsetHeight;
+    	this.canvas.width = this.canvasWidth;
+    	this.canvas.height = this.canvasHeight;
+
+    	this.centerX = this.canvasWidth / 2; 
+    	this.centerY = this.canvasHeight / 2;
+    	this.scale = this.canvasWidth > 1000 ? 1 : this.canvasWidth / (this.imageWidth * 2);
+    	console.log(this.scale)
+		}
+		stage.prototype.init = function(imageObject){
+			this.current = imageObject.xin;
+			this.draw();
+		}
+		stage.prototype.clearCanvas = function(){
+    	this.ctx.clearRect(0,0,this.canvasWidth,this.canvasHeight)
+		}
+		stage.prototype.draw = function(){
+			var self = this;
+			this.clearCanvas();
+			RAF(function(){
+				self.draw();
+			})
+			this.showImage();
+		}
+		stage.prototype.showImage = function(){
+			this.imageWidth = this.current.width;
+			this.imageHeight = this.current.height;
+			var x = this.centerX - (this.imageWidth * this.scale) / 2;
+			var y = this.centerY - (this.imageHeight * this.scale) / 2;
+			this.ctx.drawImage(this.current,x,y,(this.imageWidth * this.scale),(this.imageHeight * this.scale));
+			this.firstLine();
+		}
+		stage.prototype.firstLine = function(){
+			this.ctx.moveTo(this.centerX - 5,this.centerY + 15);
+			this.ctx.lineTo(0,750);
+			this.ctx.lineWidth = 1;
+      // set line color
+      this.ctx.strokeStyle = '#1AA1E5';
+			this.ctx.stroke();
+		}
+
+		return function(){
+			return new stage();
+		}
+	}());
+
+	var myStage = Stage();
+
+</script>
