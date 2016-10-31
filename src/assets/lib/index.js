@@ -705,6 +705,14 @@ particlesJS("particles-js-2", {
   },
   "retina_detect": true
 });
+
+// new Vivus('my-svg', {duration: 200}, function(){
+//     console.log('hello world')
+// });
+
+
+
+
 //TODO:视频播放
 // var player = videojs('really-cool-video', { /* Options */ }, function() {
 //   console.log('Good to go!');
