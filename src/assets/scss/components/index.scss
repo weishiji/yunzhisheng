@@ -173,10 +173,16 @@ $borderLine:#B2E2F7 !default;
   .case-item{
     padding:3rem;
     position:relative;
-    &:hover img{
+    &:hover .item img{
       -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    }
+    
+    .mask{
+      @include overlay();
+      padding:3rem;
+      z-index:10;
     }
   }
   img{
@@ -189,41 +195,6 @@ $borderLine:#B2E2F7 !default;
   .item{
     position:relative;
     overflow:hidden;
-    .mask-icon{
-      @include overlay();
-      background:rgba(0,0,0,.5);
-      display: table-cell;
-      vertical-align: middle;
-    }
-  }
-  .sm-home,.sm-med,.sm-car,.sm-edu{
-    color:#FFF;
-    text-align:center;
-    margin-bottom:0;
-    margin-top: 28%;
-    span{
-      background:url(/assets/img/index/home_case_icon.png) center;
-      display:inline-block;
-      width:4rem;
-      height:4rem;  
-      background-size: 500px;
-    }
-    b{
-      position:relative;
-      top:-39px;
-    }
-  }
-  .sm-home span{
-    background-position: -45px -34px;
-  }
-  .sm-car span{
-    background-position: -161px -34px;
-  }
-  .sm-med span{
-    background-position: -281px -34px;
-  }
-  .sm-edu span{
-    background-position: -385px -26px;
   }
   .footer{
     background:#1B98D6;
@@ -234,6 +205,7 @@ $borderLine:#B2E2F7 !default;
     width:70%;
     color:#FFF;
     height:8rem;
+    z-index:12;
   }
 }
 .home-video{
