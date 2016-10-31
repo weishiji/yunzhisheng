@@ -193,7 +193,7 @@ $medicalSky : #34B0E9 !default;
 .medical-yi-zhan-shi{
   background: #F0F8FC url(/assets/img/medical/yl5.png) center 30% no-repeat;
   background-size:contain;
-  padding:5rem 0;
+  padding:5rem 0 3rem 0;
   .vertical a{
     color:#A2AAAE;
     cursor: default;
@@ -267,7 +267,7 @@ hr.long-line{
 .medical-partner{
   padding-bottom:3rem;
   table p{
-    padding-bottom:0;
+    margin-bottom:0;
   }
 }
 .top-dot-line,.center-dot-line,.bottom-dot-line{
@@ -282,14 +282,15 @@ hr.long-line{
 }
 .top-dot-line{
   .title{
-    top:-1.5em;
+    top: -1.5em;right: -0.5em;
   }
 }
 .center-dot-line .title{
-  top:-0.25em;
+  top: -1.5em;right: 1.5em;
 }
 .bottom-dot-line .title{
-  top:-0.8em;
+  top:-0.5em;
+  right:-0.5em;
 }
 
 
