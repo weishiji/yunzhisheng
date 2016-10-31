@@ -52,6 +52,11 @@
       width: 82%;
       height:4rem;
     }
+    @include breakpoint(small only) {
+      p.des{
+        height:5rem;
+      }
+    }
   }
 }
 .home-advantage{
