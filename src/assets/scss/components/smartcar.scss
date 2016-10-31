@@ -72,8 +72,18 @@ $orange : #ED892E !default;
 }
 .car-partner{
   margin-bottom:5rem;
+  table p{
+    margin-bottom:0;
+  }
 }
-
+.car-case-vertical{
+  td{
+    position:relative;  
+  }
+  .title{
+    height:2rem;
+  }
+}
 
 
 
