@@ -5,17 +5,20 @@ $borderLine:#B2E2F7 !default;
 	background: #074E68 url(/assets/img/index/im__banner_home.jpg) center 30% repeat-x;
   //background: #074E68 center 30% repeat-x;
   position: relative;
-  padding: 8.5rem 0 10.5rem;
+  padding: 16.5rem 0 18.5rem;
   text-align: center;
   overflow: visible;
   h1{
   	color:#FFF;
-  	line-height: 2.5;
+  	line-height: 1.5;
+    font-size:4em;
+    letter-spacing:0.1em;
   }
   h3{
   	color:#28E7F4;
   	letter-spacing:0.5em;
-  	line-height: 2.5;
+  	line-height: 1.5;
+    font-size:2em;
   }
   #particles-js{
     @include overlay();
@@ -279,5 +282,10 @@ $borderLine:#B2E2F7 !default;
     color:#FFF;
     padding-top:3%;
     text-indent:30%;
+  }
+}
+.index-partner{
+  table p{
+    margin-bottom:0;
   }
 }
