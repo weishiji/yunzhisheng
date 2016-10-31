@@ -114,13 +114,13 @@ function canvas_bg(url,worlUrl){
         var romImg=Math.round(Math.random()*9+1)
         romImg=8
         imgObj=[
-            {"imgUrl":"/assets/img/index/home1.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home2.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home3.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home4.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home5.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home6.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home7.png","imgDesc":"Happy Weekend/nHappy Holiday/n同城","imgLink":"ease0.html"}
+            {"imgUrl":"/assets/img/index/home1.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home2.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home3.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home4.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home5.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home6.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home7.png","imgDesc":"","imgLink":"ease0.html"}
         ]
         n = imgObj.length;// total number of nodes   ͼƬ����
         img_r=[]
@@ -226,9 +226,8 @@ function canvas_bg(url,worlUrl){
                 endY=event.pageY;
                 var index=event.target.id;
                 index = index.replace(/[^0-9]/ig,"");
-                console.log(index)
                 if(Math.abs(endX-startX)<20&&Math.abs(endY-startY)<20){
-                    window.open(imgObj[index].imgLink);
+                    //window.open(imgObj[index].imgLink);
                 }
 
 
