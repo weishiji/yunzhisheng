@@ -24,12 +24,62 @@ $borderLine:#B2E2F7 !default;
     @include overlay();
   }
 }
+.index-page{
+  overflow-x:hidden;
+  @include breakpoint(small only) {
+    .yun-duan-xin {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .yun-duan-xin{
+      left:-20%;
+    }
+  }
+}
+
 .yun-duan-xin{
-  width:100%;
-  padding-bottom:60%;
+  width:1440px;
   position:relative;
+
+  overflow:hidden;
+  img{
+    width:546px;
+  }
+  .line-1-text,.line-2-text,.line-3-text{
+    position:absolute;
+    z-index: 11;
+    display:none;
+    p{
+      margin-bottom:0;
+    }
+    .title{
+      color:#1AA1E5;
+      font-size:120%;
+    }
+  }
+  .line-2-image,.line-3-image{
+    display:none;
+  }
+  .line-1-text{
+    left: 370px;
+    top: 470px;
+  }
+  .line-2-text{
+    left: 380px;
+    top: 160px;
+  }
+  .line-3-text{
+    left: 1020px;
+    top: 320px;
+  }
   #canvas-container{
     @include overlay();
+  }
+  #hi-there{
+    @include overlay();
+    display:none;
   }
 }
 .close-loop{
