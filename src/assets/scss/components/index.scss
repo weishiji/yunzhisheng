@@ -37,6 +37,11 @@ $borderLine:#B2E2F7 !default;
       left:-20%;
     }
   }
+  @include breakpoint(large) {
+    .yun-duan-xin{
+      left:0;
+    }
+  }
 }
 
 .yun-duan-xin{
