@@ -132,7 +132,17 @@ table.full-border tr th:last-child {
 	float:right !important;
 }
 #video-modal{
-  top:40px !important;
+  #youku-video{
+    min-height:24rem;
+  }
+}
+@include breakpoint(small){
+  #video-modal{
+    //top:40px !important;
+    #youku-video{
+      //height:12rem !important;
+    }
+  }
 }
 
 

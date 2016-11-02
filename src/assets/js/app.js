@@ -34,21 +34,31 @@ if(window.YKU){
     client_id: '8aed8aeca16cd366',
     vid: _vid,
     width: '100%',
-    height: '500',
+    height: '450',
     styleid: '0',
     autoplay: true,
     newPlayer: true
   });  
-  function playVideo(){
-    player.playVideo();
+  function _playVideo(){
+    try{
+      player.playVideo();  
+    }catch(e){
+      console.warn('error you ku')
+    }
+    
   }
-  function pauseVideo(){
-    player.pauseVideo();
+  function _pauseVideo(){
+    try{
+      player.pauseVideo();  
+    }catch(e){
+      console.warn('error you ku')
+    }
   }
+
   $('#video-modal').on('open.zf.reveal',function(){
-    playVideo();
+    _playVideo();
   }).on('closed.zf.reveal',function(){
-    pauseVideo();
+    _pauseVideo();
   })
 }
 //首页闭环

@@ -114,13 +114,13 @@ function canvas_bg(url,worlUrl){
         var romImg=Math.round(Math.random()*9+1)
         romImg=8
         imgObj=[
-            {"imgUrl":"/assets/img/index/home1.png","imgDesc":"","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home2.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home1.png","imgDesc":"国内首家三甲医院上线\n医疗语音录入","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home2.png","imgDesc":"中国后装车机市场\n占有率第一","imgLink":"ease0.html"},
             {"imgUrl":"/assets/img/index/home3.png","imgDesc":"","imgLink":"ease0.html"},
             {"imgUrl":"/assets/img/index/home4.png","imgDesc":"","imgLink":"ease0.html"},
             {"imgUrl":"/assets/img/index/home5.png","imgDesc":"","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home6.png","imgDesc":"","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home7.png","imgDesc":"","imgLink":"ease0.html"}
+            {"imgUrl":"/assets/img/index/home6.png","imgDesc":"公有云平台数据最大\n的创业公司","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home7.png","imgDesc":"白色家电领域唯一落\n地出货的芯片供应商","imgLink":"ease0.html"}
         ]
         n = imgObj.length;// total number of nodes   ͼƬ����
         img_r=[]
@@ -205,7 +205,7 @@ function canvas_bg(url,worlUrl){
 
                 //显示蓝色的圆背景
                 pi_lan[img_index].clear();
-                pi_lan[img_index].beginFill(0x0c3e70,0.7);
+                pi_lan[img_index].beginFill("#FFF",0.7);
                 pi_lan[img_index].lineStyle(0);
                 pi_lan[img_index].drawCircle(_img_scale*4, _img_scale*4,_img_scale*6);
                 pi_lan[img_index].endFill();
@@ -290,11 +290,11 @@ function canvas_bg(url,worlUrl){
 
             //蓝色的背景
             var lan = new PIXI.Graphics();
-            //lan.beginFill(0x000000);
-            //lan.beginFill(0xFF0000);
-            //lan.lineStyle(4, 0xffd900, 1);
+            lan.beginFill(0x000000);
+            lan.beginFill(0xFF0000);
+            lan.lineStyle(4, 0xffd900, 1);
 
-            var textSample = new PIXI.Text(imgObj[j].imgDesc, { fontFamily: '18px Georgia-Italic', fill: 'white' });
+            var textSample = new PIXI.Text(imgObj[j].imgDesc, { fontSize: '22px', fill: 'white' });
 
             textSample.position.x=bunny.width/2;
             textSample.position.y=bunny.height/2;

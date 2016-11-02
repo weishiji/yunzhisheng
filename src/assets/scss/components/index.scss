@@ -26,9 +26,15 @@ $borderLine:#B2E2F7 !default;
 }
 .index-page{
   overflow-x:hidden;
+  .small-yun-duan-xin{
+    display:none;
+  }
   @include breakpoint(small only) {
     .yun-duan-xin {
       display: none;
+    }
+    .small-yun-duan-xin{
+      display:block;
     }
   }
 
@@ -51,6 +57,8 @@ $borderLine:#B2E2F7 !default;
   overflow:hidden;
   img{
     width:546px;
+    z-index:99;
+    position:relative;
   }
   .line-1-text,.line-2-text,.line-3-text{
     position:absolute;
@@ -225,7 +233,7 @@ $borderLine:#B2E2F7 !default;
   }
 }
 .home-business{
-  margin-bottom:2rem;
+  margin-bottom:5rem;
   .case-item{
     padding:3rem;
     position:relative;
