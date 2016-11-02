@@ -131,6 +131,9 @@ table.full-border tr th:last-child {
 .pull-right{
 	float:right !important;
 }
+#video-modal{
+  top:40px !important;
+}
 
 
 @import './components/_header.scss';
