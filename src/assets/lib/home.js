@@ -499,10 +499,10 @@ new canvas_bg(work_data,work_index);
 particlesJS("particles-js-2", {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 20,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 500
       }
     },
     "color": {
@@ -511,8 +511,8 @@ particlesJS("particles-js-2", {
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0,
-        "color": "#000000"
+        "width": 14,
+        "color": "#eee"
       },
       "polygon": {
         "nb_sides": 5
@@ -543,7 +543,7 @@ particlesJS("particles-js-2", {
       "distance": 150,
       "color": "#DCDDDE",
       "opacity": 0.8,
-      "width": 2
+      "width": 1
     },
     "move": {
       "enable": true,
