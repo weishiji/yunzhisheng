@@ -11,14 +11,18 @@ $borderLine:#B2E2F7 !default;
   h1{
   	color:#FFF;
   	line-height: 1.5;
-    font-size:4em;
+    @include breakpoint(large){
+      font-size:4em;
+    }
     letter-spacing:0.1em;
   }
   h3{
   	color:#28E7F4;
   	letter-spacing:0.5em;
   	line-height: 1.5;
-    font-size:2em;
+    @include breakpoint(large){
+      font-size:2em;
+    }
   }
   #particles-js{
     @include overlay();

@@ -42,6 +42,10 @@ $timeColor:#87D4C8 !default;
 	}
 	.dot{
 		text-align:center;
+		img{
+			position:relative;
+			left:3px;
+		}
 	}
 	.time{
 		text-align:right;
@@ -210,6 +214,7 @@ $profileText:#5A5F64 !default;
 		}
 		p{
 			line-height:2.4;
+			margin-bottom: 0;
 		}	
 		.title{
 			color:$profileBlue;

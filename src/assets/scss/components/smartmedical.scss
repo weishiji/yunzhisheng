@@ -19,15 +19,16 @@ $medicalSky : #34B0E9 !default;
     position:relative;
    .mask{
       @include overlay();
-      padding-top:15rem;
       .play-btn{
         padding:1em 2rem;
         border-radius:2rem;
         color:#FFF;
         border:1px solid #FEFEFD;
-        margin-top:2rem;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-6rem;
         display:inline-block;
-
         &:hover{
           border-color:#FFF;
         }
