@@ -181,3 +181,30 @@
 .home-hezuohuoban{
   margin-bottom:4rem;
 }
+.home-advantage-adjust{
+  padding:3rem 0 4rem 0;
+  background:#302F3F;
+  color:#FFF;
+  .text-color{
+    color:#E0E4E5;
+  }
+  .box{
+    margin-top:4rem;
+    margin-bottom:4rem;
+    img{
+      max-width:150px;
+    }
+    .title{
+      height:4em;
+    }
+    .sub-title{
+      color:#81838F;
+    }
+    hr{
+      border-color:#434454;
+      margin:4rem 0;
+    }
+  }
+}
+
+
