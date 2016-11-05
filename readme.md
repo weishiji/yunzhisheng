@@ -1,17 +1,5 @@
-# ZURB Template
+# yunzhisheng Website
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
-
-This is the official ZURB Template for use with [yun zhi sheng](http://htmlpreview.github.io/?https://github.com/weishiji/yunzhisheng/blob/master/dist/index.html). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
-
-- Handlebars HTML templates with Panini
-- Sass compilation and prefixing
-- JavaScript concatenation
-- Built-in BrowserSync server
-- For production builds:
-  - CSS compression
-  - JavaScript compression
-  - Image compression
 
 ## Installation
 
@@ -20,30 +8,13 @@ To use this template, your computer needs:
 - [NodeJS](https://nodejs.org/en/) (0.12 or greater)
 - [Git](https://git-scm.com/)
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template zurb
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
 ### Manual Setup
 
 To manually set up the template, first download it with Git:
 
 ```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
+git clone https://github.com/weishiji/yunzhisheng.git
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
@@ -61,3 +32,11 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `npm run build`.
+
+
+Documents
+-------------
+- 默认模版引擎在`src/layouts/default.html`,所有文件全部通过`default.html`配置
+- 对应的每个页面在`src/pages/*.html` 
+- 每个文件对应着一个sass文件，但是所有的关于我们只对应一个sass文件，样式会被压缩进同一个文件夹内
+- 根目录有一个配置文件，`config.yml`，**gulp**会读取这里面的配置，详情请看`foundation6`的官方文档，有很详细的说明
