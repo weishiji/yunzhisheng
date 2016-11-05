@@ -9,10 +9,10 @@ if($banner.length !== 0){
     var bannerHeight = $banner.outerHeight(true);
     if(scrollBarPos > bannerHeight){
       $topMenu.addClass('fixed-color');
-      $logo.attr('src','/assets/img/logo/logo_color.png');
+      $logo.attr('src','/assets/img/logo/logo_color.svg');
     }else{
       $topMenu.removeClass('fixed-color');
-      $logo.attr('src','/assets/img/logo/logo_transparent.png');
+      $logo.attr('src','/assets/img/logo/logo_white.svg');
     }
   };
   scrollY();

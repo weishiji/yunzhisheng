@@ -44,18 +44,18 @@ $borderLine:#B2E2F7 !default;
 
   @include breakpoint(medium) {
     .yun-duan-xin{
-      left:-20%;
+      //left:-20%;
     }
   }
   @include breakpoint(large) {
     .yun-duan-xin{
-      left:0;
+      //left:0;
     }
   }
 }
 
 .yun-duan-xin{
-  width:1440px;
+  //width:1440px;
   position:relative;
 
   overflow:hidden;
