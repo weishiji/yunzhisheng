@@ -714,59 +714,62 @@ particlesJS("particles-js-2", {
 //   // called after the animation completes
 //   myVivus.stop()
 // })
-var line1,line2,line3;
-var hi = new Vivus('hi-there', {type: 'oneByOne', 
-    duration: 200, 
-    start: 'autostart',
-    //dashGap: 20, 
-    delay:10,
-    forceRender: false
-    ,onReady : function(e){
-        $(e.el).show();
-        lineAnimation();
+function startLineAnimation(){
+    var line1,line2,line3;
+    var hi = new Vivus('hi-there', {type: 'oneByOne', 
+        duration: 200, 
+        start: 'autostart',
+        //dashGap: 20, 
+        delay:10,
+        forceRender: false
+        ,onReady : function(e){
+            $(e.el).show();
+            lineAnimation();
+            
+        }
+    },
+    function () {
+        setTimeout(function(){
+            showImage(1);
+            hi.reset();
+            hi.setFrameProgress(0);
+            lineAnimation();
+            $('.line-1-text,.line-2-text,.line-3-text').hide();
+        },3000)
+    });
+
+    function showImage(_index){
+        $('.line-1-image,.line-2-image,.line-3-image').hide();
+        $('.line-'+ _index +'-image').show();
+    }
+    function lineAnimation(){
+        showImage(1);
+        line1 = setTimeout(function(){
+            hi.stop();
+            hi.setFrameProgress(0.29);
+            $('.line-1-text').show();
+        },2000)
+        setTimeout(function(){
+            showImage(2);
+            hi.play();
+        },4000)
+        setTimeout(function(){
+            $('.line-2-text').show();
+            hi.stop();
+            hi.setFrameProgress(0.71);
+        },6000)
+        setTimeout(function(){
+            showImage(3);
+            hi.play();
+        },8000);
+        setTimeout(function(){
+            $('.line-3-text').show();
+        },9000)
         
     }
-},
-function () {
-    setTimeout(function(){
-        showImage(1);
-        hi.reset();
-        hi.setFrameProgress(0);
-        lineAnimation();
-        $('.line-1-text,.line-2-text,.line-3-text').hide();
-    },3000)
-});
-
-function showImage(_index){
-    $('.line-1-image,.line-2-image,.line-3-image').hide();
-    $('.line-'+ _index +'-image').show();
-}
-function lineAnimation(){
-    showImage(1);
-    line1 = setTimeout(function(){
-        hi.stop();
-        hi.setFrameProgress(0.29);
-        $('.line-1-text').show();
-    },2000)
-    setTimeout(function(){
-        showImage(2);
-        hi.play();
-    },4000)
-    setTimeout(function(){
-        $('.line-2-text').show();
-        hi.stop();
-        hi.setFrameProgress(0.71);
-    },6000)
-    setTimeout(function(){
-        showImage(3);
-        hi.play();
-    },8000);
-    setTimeout(function(){
-        $('.line-3-text').show();
-    },9000)
-    
 }
 
+startLineAnimation();
 
 
 

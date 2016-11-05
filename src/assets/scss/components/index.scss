@@ -96,7 +96,7 @@ $borderLine:#B2E2F7 !default;
   }
   #hi-there{
     @include overlay();
-    display:none;
+    //display:none;
   }
 }
 .close-loop{
