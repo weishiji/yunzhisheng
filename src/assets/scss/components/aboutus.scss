@@ -278,6 +278,18 @@ $profileText:#5A5F64 !default;
 }
 .news-media{
 	padding:3rem 0;
+	.media-list{
+		padding:2rem 0;
+		h4{
+			color:#00001C;
+		}
+		p{
+			color:#6E7376;
+		}
+		&:nth-child(even) {
+			background-color:#F3F8FB;	
+		}
+	}
 }
 //新闻详情
 .new-page{
