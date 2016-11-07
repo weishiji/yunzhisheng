@@ -746,7 +746,7 @@ function startLineAnimation(){
         showImage(1);
         line1 = setTimeout(function(){
             hi.stop();
-            hi.setFrameProgress(0.29);
+            hi.setFrameProgress(0.31);
             $('.line-1-text').show();
         },2000)
         setTimeout(function(){
@@ -756,7 +756,7 @@ function startLineAnimation(){
         setTimeout(function(){
             $('.line-2-text').show();
             hi.stop();
-            hi.setFrameProgress(0.71);
+            hi.setFrameProgress(0.73);
         },6000)
         setTimeout(function(){
             showImage(3);
