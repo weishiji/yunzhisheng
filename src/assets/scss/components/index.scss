@@ -59,11 +59,11 @@ $borderLine:#B2E2F7 !default;
   position:relative;
 
   overflow:hidden;
-  img{
-    width:546px;
-    z-index:99;
-    position:relative;
-  }
+  // img{
+  //   width:546px;
+  //   z-index:99;
+  //   position:relative;
+  // }
   .line-1-text,.line-2-text,.line-3-text{
     position:absolute;
     z-index: 11;
