@@ -662,6 +662,6 @@ var newApp = new Vue({
     }
   },
   created:function () {
-    console.log(this.news);
+    // console.log(this.news);
   }
 });
