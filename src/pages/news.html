@@ -1,0 +1,151 @@
+---
+title: 云知声－新闻动态
+logoSrc: /assets/img/logo/logo_white.svg
+logoSrcSmall: /assets/img/logo/logo_white.svg
+logoLink: /
+currentPage: news-page
+---
+
+<div id="newApp">
+  <div class="news-page-banner re-top">
+    <h1>新闻动态</h1>
+    <h3>云知声，专注物联网人工智能服务</h3>
+  </div>
+  <div class="news-media">
+    <a v-bind:href="item.url" class="media-list" v-for="(item, index) in news" :key="index">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="media-object">
+            <div class="media-object-section">
+              <div class="thumbnail" style="width: 300px;">
+                <img v-bind:src="'/assets/img/news/news'+item.id+'.jpg'" style="width: 100%">
+              </div>
+            </div>
+            <div class="media-object-section main-section">
+              <h4 v-text="item.period+item.title"></h4>
+              <p v-text="item.desc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <!--<div class="media-list">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="media-object">
+            <div class="media-object-section">
+              <div class="thumbnail">
+                <img src= "/assets/img/news/news1.jpg" style="width: 100%">
+              </div>
+            </div>
+            <div class="media-object-section main-section">
+              <h4>品牌升级后首次亮相 云知声在GMIC 2016推AI芯战略</h4>
+              <p>4月28日消息，为期五天的全球互联网大会（GMIC）在北京-国家会议中心开幕，专注于物联网人工智能服务的云知声品牌升级后重装亮相。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media-list">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="media-object">
+            <div class="media-object-section">
+              <div class="thumbnail">
+                <img src="/assets/img/news/news2.jpg" style="width: 100%">
+              </div>
+            </div>
+            <div class="media-object-section main-section">
+              <h4>专注物联网人工智能服务 云知声“芯”起航</h4>
+              <p>4月21日，借着乔迁新址之际，云知声在北京总部新址太阳宫冠捷大厦举办小型媒体沟通会，云知声CEO黄伟在现场宣布，云知声品牌定位将全面升级为“专注物联网人工智能服务”。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media-list">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="media-object">
+            <div class="media-object-section">
+              <div class="thumbnail">
+                <img src= "/assets/img/news/news3.jpg" style="width: 100%">
+              </div>
+            </div>
+            <div class="media-object-section main-section">
+              <h4>人工智能“芯”升级，云知声携多款产品亮相CITE2016</h4>
+              <p>2016年5月8日至10日，第四届之昂过电子信息博览会（CITE 2016）在深圳会展中心举办，围绕“创新、智能、融合”的主题，集中展示智能硬件、机器人、无人机、移动互联网、物联网等重点行业应用。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media-list">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="media-object">
+            <div class="media-object-section">
+              <div class="thumbnail">
+                <img src= "/assets/img/news/news4.jpg" style="width: 100%">
+              </div>
+            </div>
+            <div class="media-object-section main-section">
+              <h4>北京云知声搬家通知</h4>
+              <p>不忘初心，新的起航。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media-list">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="media-object">
+            <div class="media-object-section">
+              <div class="thumbnail">
+                <img src= "/assets/img/news/news5.jpg" style="width: 100%">
+              </div>
+            </div>
+            <div class="media-object-section main-section">
+              <h4>【2016年ADAS与自动驾驶趋势论坛】云知声董事长梁家恩：人工智能将颠覆你的驾驶体验</h4>
+              <p>3月23日-24日，2016年ADAS与自动驾驶趋势论坛于上海国际汽车城汽车创新港举办，超过200位来自整车、零部件、半导体、技术方案、软件服务领域知名企业的商业和技术领袖参加本次论坛。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media-list">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="media-object">
+            <div class="media-object-section">
+              <div class="thumbnail">
+                <img src= "/assets/img/news/news6.jpg" style="width: 100%">
+              </div>
+            </div>
+            <div class="media-object-section main-section">
+              <h4>云知声亮相ICASSP 2016，深化产业与学术交流</h4>
+              <p>2016年3月20日第41届IEEE声学，语音与信号处理国际会议（下简称ICASSP2016）在上海国际会议中心开幕，超过2000名俩字全球各国的学者，企业家来到上海共襄盛举。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </div>
+  <div class="row">
+    <div class="small-12 text-right">
+      <ul class="pagination" role="navigation" aria-label="Pagination">
+        <li v-on:click="goPrev" class="pagination-previous disabled">Previous</li>
+        <li href="javascript:;" v-on:click="goCurrent" class="current">1</li>
+        <li v-on:click="goCurrent"><a href="#">2</a></li>
+        <li v-on:click="goCurrent"><a href="#">3</a></li>
+        <li v-on:click="goCurrent"><a href="#">4</a></li>
+        <li v-on:click="goCurrent"><a href="#">5</a></li>
+        <li v-on:click="goCurrent"><a href="#">6</a></li>
+        <li v-on:click="goCurrent"><a href="#">7</a></li>
+        <li v-on:click="goCurrent"><a href="#">8</a></li>
+        <li v-on:click="goNext" class="pagination-next"><a href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

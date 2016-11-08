@@ -1,0 +1,223 @@
+$blue:#2199e8 !default;
+$darkBlue:#2c3840 !default;
+$menuBlue:#009CFC !default;
+$menuDark:#04fffc !default;
+//在大屏幕下不显示左边栏按钮
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint(small only){
+    .is-drilldown{
+        position:absolute;
+        background:#0a0a0a;
+    }
+    .fixed-color .is-drilldown{
+        //background:#FFF;
+    }
+    .marketing-topbar .is-active a{
+        background:#0a0a0a !important;   
+    }
+}
+//缩进向上的差值
+header + .re-top{
+    position:relative;
+    margin-top:-50px;
+}
+
+
+.top-bar, .top-bar ul{
+	//background:$darkBlue;
+    background:transparent;
+}
+header{
+    z-index:9999;
+    position:relative;
+}
+.top-bar{
+	padding:0;
+}
+#main-menu.fixed-color{
+    background:#FFF;
+    border-bottom:1px solid #ddd;
+    & li.is-active a{
+        color:#FFF;
+        &:hover{
+            color:$menuDark;    
+        }
+    }
+    & a{
+        color:#333;
+        &:hover{
+            color:#FFF;
+        }
+    }
+}
+
+.title-area{
+    a:hover{
+        background:none !important;
+    }
+    img{
+        height:100%;
+        //padding:0.2rem 0;
+    }
+}
+@include breakpoint(small only) {
+   .is-drilldown li.title-area {
+      display: none !important;
+    }
+    .marketing-topbar .menu a:hover{
+        background:#0a0a0a !important;
+    }
+    .is-drilldown-submenu-parent > a::after{
+        border-color: transparent transparent transparent #FFF;
+    }
+ }
+
+
+
+
+
+
+.marketing-topbar {
+    background: $darkBlue;
+    font-size: .8125rem;
+    font-weight: bold;
+    position: relative;
+    background:transparent;
+}
+
+.marketing-topbar::before,.marketing-topbar::after {
+    content: ' ';
+    display: table;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+.marketing-topbar::after {
+    clear: both
+}
+
+.marketing-topbar ul:first-child {
+    float: left;
+}
+
+.marketing-topbar ul:last-child {
+    float: right;
+}
+
+.marketing-topbar .dropdown.menu>a {
+    background: $darkBlue;
+}
+
+.marketing-topbar .dropdown.menu a.button {
+    background: #2199e8
+}
+
+.marketing-topbar .dropdown.menu a.button:hover {
+    color: $menuDark;
+}
+
+.marketing-topbar .is-dropdown-submenu-item a:hover {
+    color: $menuDark;
+}
+
+.marketing-topbar .zurb-logo-text {
+    margin-left: 5px;
+    padding-top: 4px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.marketing-topbar .topbar-title>a {
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 5px
+}
+
+.marketing-topbar .menu a {
+    height: 50px;
+    line-height: 50px !important;
+    color: #f5f5f5;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    &:hover{
+        background:$menuBlue;    
+    }
+}
+
+.marketing-topbar .menu a:hover:not(.button):not(.zurb-logo),.marketing-topbar .menu a:focus {
+    color: $menuDark;
+}
+
+.marketing-topbar .menu a.button {
+    border-radius: 0;
+    box-shadow: 0 0 0 transparent
+}
+
+.marketing-topbar .menu.submenu {
+    border: 0;
+    //margin-left: -1px;
+}
+
+.marketing-topbar .dropdown.menu>li.opens-right>.is-dropdown-submenu {
+    border: none
+}
+
+.marketing-topbar .zurb-logo img {
+    height: 45px;
+    width: 76px;
+    opacity: 0.9
+}
+
+.marketing-topbar .topbar-title {
+    opacity: 0.9;
+    transition: all .25s ease-in-out
+}
+
+.marketing-topbar .topbar-title:hover {
+    opacity: 1;
+    transition: all .25s ease-in-out
+}
+
+.marketing-topbar .title {
+    color: #8a8a8a;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 0.8em;
+    background: $darkBlue;
+}
+
+.marketing-topbar .is-active a {
+    background: $menuBlue;
+}
+
+.marketing-topbar .menu:last-child {
+    //border-left: 1px solid #3B4951
+}
+
+.marketing-topbar .menu li:not(:last-child) {
+    //border-right: 1px solid #3B4951
+}
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after{
+    border-color:#FFF transparent transparent;
+}
+

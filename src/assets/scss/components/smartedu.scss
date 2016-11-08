@@ -1,0 +1,123 @@
+@import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+$sky : #29CCE0 !default;
+$bluesky : #59C0F1 !default;
+.smart-edu-banner{
+	background: #333 url(/assets/img/edu/edu_1.jpg) center 30% repeat-x;
+  //background: #074E68 center 30% repeat-x;
+  position: relative;
+  padding: 14em 0 22rem;
+  text-align: center;
+  overflow: visible;
+  h1{
+  	color:#FFF;
+  	text-align:left;
+  }
+}
+.car-description{
+  p{
+    color:#999;
+  }
+}
+.smart-edu-sound-service{
+	.orbit-bullets .is-active{
+		background-color:$sky !important;
+	}
+	.orbit-caption{
+		background:none;
+		color:#313942;
+    text-align:center;
+	}
+	li.orbit-slide,.orbit-container{
+    height:35em !important;
+  }
+  .title{
+  	color:$sky;
+  }
+  .orbit-previous,.orbit-next{
+  	color:$sky !important;
+  	top:33%;
+  }
+}
+.smart-edu-circle{
+	background-color:#F2F7FB;
+	margin-top:3rem;
+	padding:4rem 0;
+	.title{
+		color:$sky;
+	}
+	.left-text{
+		text-align:right;
+	}
+	.right-text{
+		text-align:left;
+	}
+	@include breakpoint(medium) {
+    .left-text{
+    	padding-top:3rem;
+    }
+  }
+  @include breakpoint(large){
+  	.left-text{
+  		padding-top:4rem;
+  	}
+  }
+  @include breakpoint(medium) {
+    .right-text{
+    	padding-top:3rem;
+    }
+  }
+  @include breakpoint(large){
+  	.right-text{
+  		padding-top:2rem;
+  	}
+  }
+}
+$deg : 45deg !default;
+.smart-edu-value{
+	padding:1rem 0;
+	.footer{
+		padding:4rem 0 1rem 0;
+    overflow:hidden;
+    .text{
+      line-height: 3;
+      background:$bluesky;
+      color:#FFF;
+      position:relative;
+      margin-top:2px;
+      .line{
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        right: -2.5rem;
+        top: 1rem;
+        border:2px solid #FFF;
+        transform:rotate($deg);
+        -ms-transform:rotate($deg); /* Internet Explorer */
+        -moz-transform:rotate($deg); /* Firefox */
+        -webkit-transform:rotate($deg); /* Safari 和 Chrome */
+        -o-transform:rotate($deg); /* Opera */
+      }
+      @include breakpoint(small only) {
+        .line{
+          display: none;
+        }    
+      }
+    }
+	}
+  .border-line{
+      border:1px solid #FFF;
+      line-height: 3;
+      background:$bluesky;
+      color:#FFF;
+    }
+}
+.edu-partner{
+  background: url(/assets/img/edu/quxian.png) center 30% repeat-x;
+  padding:6rem 0 2rem 0;
+  background-size:cover;
+  margin-top:2rem;
+}
+
+
+

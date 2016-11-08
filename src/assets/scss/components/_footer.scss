@@ -1,0 +1,74 @@
+$footerBG : #2F363E !default;
+$font-color:#A9ACB0 !default;
+$font-color-hover:#E18E60 !default;
+footer{
+	color:#FFF;
+	background: $footerBG;
+	.callout{
+		background:$footerBG;
+		&.secondary{
+			background:$footerBG;
+		}
+	}
+	h5{
+		color:#FFF;
+	}
+	a{
+		color:$font-color;
+	}
+	a:hover{
+		color:$font-color-hover;
+	}
+	&>div.row{
+		padding:1em;
+	}
+	.copyright{
+		border-top:1px solid #777;
+		p{
+			margin:0;
+			color:#A9ACB0;
+		}
+	}
+	.home-social{
+		a{
+			background: url(/assets/img/home.png) no-repeat;
+			padding:2.4rem;
+		}
+		.wechat{
+			background-position:-324px -460px;
+			&:hover{
+				background-position:-524px -460px;
+			}
+		}
+		.webo{
+			background-position:-730px -460px;	
+			&:hover{
+				background-position:-950px -460px;	
+			}
+		}
+	}
+	.th{
+		display: inline-block;
+		padding:0 1rem 1rem 1rem;
+		background:#3A4454;
+		&:hover{
+			color:#A9ACB0;
+		}
+		p{
+			text-align: center;
+			margin:0.5rem;
+		}
+	}
+	.footer-sub-title{
+		padding:0 1rem;
+	}
+	.small-line{
+		line-height:0 !important;
+	}
+	.case-footer-type{
+		a:hover,a:active,a:visited,a:focus{
+			color:#A9ACB0 !important;
+			cursor: default;
+		}
+	}
+}

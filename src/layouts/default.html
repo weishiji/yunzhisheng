@@ -1,0 +1,214 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords"
+      content="语音云,语义云,语音开放平台,语义开放平台,语音云平台,语义云平台,开放平台,云知声,语音技术,语音技术体验,语音合成,语音识别,语义理解,语音搜索,声纹识别,语音应用,移动语音服务,云之声,免费,智能车载,智能电视,语音输入,视频搜索,音乐搜索,购物搜索,智能生活,smart life,技术体验,方案介绍">
+    <meta name="description"
+      content="北京云知声信息技术有限公司，是专注于语音识别及语言处理技术的移动互联网公司，拥有完全自主知识产权的世界顶尖的语音识别和语义理解技术。">
+    <meta name="copyright" content="云知声开放平台,云知声语音云,云知声输入法,云知声语控精灵,云知声语音助手" >
+    <meta name="author" content="北京云知声信息技术有限公司联系电话：(+8610)-82601906">
+
+
+    <link rel="shortcut icon" href="http://dev.hivoice.cn:80/myImg/favicon.ico">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+  <body>
+    <div id="main-page" class="{{currentPage}}">
+      
+      <header class="top-bar-container" data-sticky-container>
+        <nav  {{#ifpage 'index'}} class="sticky" data-sticky data-options="anchor: main-page; marginTop: 0; stickyOn: small;" style="width:100%;" {{/ifpage}}>
+          <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">云知声</div>
+          </div>
+          <div class="top-bar marketing-topbar" id="main-menu">
+            <div class="row">
+              <ul class="menu vertical medium-horizontal expanded medium-text-center" data-responsive-menu="drilldown medium-dropdown">
+                <li class="title-area">
+                  <a href="{{logoLink}}">
+                    <!-- <img src="{{logoSrc}}" alt='云知声'>   -->
+                    <img data-interchange="[{{logoSrcSmall}}, small], [{{logoSrcSmall}}, medium], [{{logoSrc}}, large]">
+                    {{logoTitle}}
+                  </a>
+                </li>
+                <li><a href="/">首页</a>
+                </li>
+                <li class="has-submenu"><a>产品与服务</a>
+                  <ul class="submenu menu vertical" data-submenu>
+                    <li><a href="/unihome.html">智能家居方案</a></li>
+                    <li><a href="/unicar.html">智能车载方案</a></li>
+                    <li><a href="/unihealth.html">智能医疗方案</a></li>
+                    <li><a href="/uniedu.html">智能教育方案</a></li>
+                    <li><a href="/kar.html">陪伴机器人方案</a></li>
+                    <!-- <li><a href="/household.html">家居</a></li>
+                    <li><a href="/univehicle.html">汽车</a></li> -->
+                  </ul>
+                </li>
+                <li><a target="_blank" href="/usc.html">核心技术</a></li>
+                <li><a target="_blank" href="http://dev.hivoice.cn">开发者网站</a></li>
+                <li class="has-submenu"><a>关于我们</a>
+                  <ul class="submenu menu vertical" data-submenu>
+                    <li><a href="/company-profile.html">公司简介</a></li>
+                    <li><a href="/progress.html">发展历程</a></li>
+                    <li><a href="/news.html">新闻动态</a></li>
+                    <li><a href="/partner.html">合作伙伴</a></li>
+                    <li><a href="/contact-us.html">联系我们</a></li>
+                    <li><a href="/join-us.html">社会招聘</a></li>
+                    <li><a href="/school.html">校园招聘</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+          
+      </header>
+      
+      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+      {{> body}}
+    </div>
+    {{#ifpage 'index' 'unihome' 'kar' 'unicar' 'uniedu' 'unihealth' 'household' 'univehicle' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us' 'school' 'news' 'new-*' 'usc'}}
+      <footer>
+        <div class="row secondary">
+          <div class="large-5 columns" style="margin-top:1em;height: 12rem;">
+            <div class="row">
+              <div class="small-4 columns">
+                <a class="th" href="javascript:;" style="display: none;" id="wechat-code">
+                  <p><small>微信服务号</small></p>
+                  <img src="/assets/img/erweima.jpg">
+                </a>
+              </div>
+              <div class="small-8 columns">
+                <img src="/assets/img/logo/logo_transparent.png">
+                <ul class="home-social menu">
+                  <li>
+                    <a class="wechat"></a>
+                  </li>
+                  <li>
+                    <a href="http://weibo.com/p/1006062941129227?is_hot=1" target="_blank" class="webo"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="large-7 columns" style="margin-top:1em;">
+            <div class="row">
+              <div class="small-12 medium-4 columns">
+                <h5 class="footer-sub-title">关于我们</h5>
+                <ul class="menu vertical">
+                  <li><a href="/company-profile.html">公司简介</a></li>
+                  <li><a href="/progress.html">公司动态</a></li>
+                  <li><a href="/join-us.html">加入我们</a></li>
+                  <li><a href="/contact-us.html">联系我们</a></li>
+                </ul>
+              </div>
+              {{#ifpage 'index' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us' 'school' 'news' 'new-*'}}
+              <div class="small-12 medium-8 columns case-footer-type">
+                <h5 class="footer-sub-title">方案咨询</h5>
+                <ul class="menu vertical">
+                  <li><a href="">商务QQ：36545842</a></li>
+                  <li><a href="">咨询电话：18102055692</a></li>
+                  <li><a href="">咨询邮箱：yunzhisheng@unisound.com</a></li>
+                </ul>
+              </div>
+              {{/ifpage}}
+              {{#ifpage 'kar'}}
+                <div class="small-12 medium-8 columns case-footer-type">
+                  <h5 class="footer-sub-title">KAR方案咨询</h5>
+                  <ul class="menu vertical">
+                    <li><a>北京：李先生 13220127196</a></li>
+                    <li><a>上海：孙先生 17740894193</a></li>
+                    <li><a>深圳：胡先生 18038187996</a></li>
+                  </ul>
+                </div>
+              {{/ifpage}}
+              {{#ifpage 'unihome' 'household'}}
+                <div class="small-12 medium-8 columns case-footer-type">
+                  <h5 class="footer-sub-title">Unihome咨询方案</h5>
+                  <ul class="menu vertical">
+                    <li><a class="small-line">胡先生：+86 18038187996</a></li>
+                    <li><a class="small-line">邮&nbsp;&nbsp;&nbsp;箱：hutianyi@unisound.com</a></li>
+                    <br/>
+                    <li style="margin-top: -12px;"><a class="small-line">孙先生：+86 17740894193<br/></a></li>
+                    <li><a class="small-line">邮&nbsp;&nbsp;&nbsp;箱：sunlie@unisound.com</a></li>
+                    <br/>
+                    <li style="margin-top: -12px;"><a class="small-line">李先生：+86 13220127196<br/></a></li>
+                    <li><a class="small-line">邮&nbsp;&nbsp;&nbsp;箱：lishuanlei@unisound.com</a></li>
+                  </ul>
+                </div>
+              {{/ifpage}}
+              {{#ifpage 'unicar' 'univehicle'}}
+                <div class="small-12 medium-8 columns case-footer-type">
+                  <h5 class="footer-sub-title">Unicar方案咨询</h5>
+                  <ul class="menu vertical">
+                    <li><a>联系人: 陈先生</a></li>
+                    <li><a>电&nbsp;&nbsp;&nbsp;话: 180-3816-7537</a></li>
+                    <li><a>邮&nbsp;&nbsp;&nbsp;箱: chenqiuxian@unisound.com</a></li>
+                  </ul>
+                </div>
+              {{/ifpage}}
+              {{#ifpage 'uniedu'}}
+                <div class="small-12 medium-8 columns case-footer-type">
+                  <h5 class="footer-sub-title">教育方案咨询</h5>
+                  <ul class="menu vertical">
+                    <li><a>电话：021-64858808</a></li>
+                    <li><a>邮箱：edu@unisound.com</a></li>
+                  </ul>
+                </div>
+              {{/ifpage}}
+              {{#ifpage 'unihealth'}}
+                <div class="small-12 medium-8 columns case-footer-type">
+                  <h5 class="footer-sub-title">医疗方案咨询</h5>
+                  <ul class="menu vertical">
+                    <li><a>电话：010-62369899-024</a></li>
+                    <li><a>手机：13220117560</a></li>
+                    <li><a>邮箱：Unihealth@unisound.com</a></li>
+                  </ul>
+                </div>
+              {{/ifpage}}
+            </div>
+          </div>
+        </div>
+        <div class="row expanded copyright">
+          <div class="small-12 columns">
+            <p class="text-center"><small>北京云知声信息技术有限公司 Copyright &copy; 2016 All Right Reserved</small></p>
+          </div>
+        </div>
+      </footer>
+    {{/ifpage}}
+
+    {{#ifpage 'index' 'unihealth'}}    
+      <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+    {{/ifpage}}
+
+    <script src="assets/lib/vue.min.js"></script>
+    <script src="{{root}}assets/js/app.js"></script>
+
+    {{#ifpage 'index'}}
+      <script src="{{root}}assets/lib/tweenMax.min.js"></script>
+      <script src="{{root}}assets/lib/d3.min.js"></script>
+      <script src="{{root}}assets/lib/pixi.min.js"></script>
+      <script src="{{root}}assets/lib/vivus/vivus.min.js"></script>
+      <!-- 
+      <link href="{{root}}assets/lib/video-js/video.css" rel="stylesheet">
+      <script src="{{root}}assets/lib/video-js/video.js"></script>
+      -->
+      <script src="{{root}}assets/lib/index.js"></script>
+    {{/ifpage}}
+    {{#ifpage 'unihome'}}
+      <script src="{{root}}assets/lib/tweenMax.min.js"></script>
+      <script src="{{root}}assets/lib/d3.min.js"></script>
+      <script src="{{root}}assets/lib/pixi.min.js"></script>
+
+      <script src="{{root}}assets/lib/home.js"></script>
+    {{/ifpage}}
+  </body>
+</html>

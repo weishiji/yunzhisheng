@@ -1,0 +1,76 @@
+@import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+$houseGray:#6D7176 !default;
+.my-menu-text{
+  li a{
+    line-height:1.5;
+    position:relative;
+    padding: 0.2rem 1rem;
+  }
+  a:hover,a:visited,a:active,a:focus,a{
+    color:$houseGray;  
+    cursor:default;
+
+  }
+}
+ul.my-list-style li a:before{
+    content: "♦"; /* Insert content that looks like bullets */
+    color: $houseGray; /* Or a color you prefer */
+    position:absolute;
+    left:0;
+}
+
+.household-leshi-tv,.household-huadi,.household-light,.household-robot,.household-robby{
+  padding:5rem 0 0rem 0;
+  .title{
+    color:#4E555D;
+    img{
+      position:relative;
+      top:-7px;
+    }
+  }
+  .sub-title{
+    padding:0.5rem 1rem;
+    color:#4E555D;
+  }
+}
+
+.household-banner{
+	background: #FFF url(/assets/img/home/home_1.jpg) center 30% repeat-x;
+  position: relative;
+  padding: 14.5rem 0 17rem;
+  text-align: center;
+  overflow: visible;
+  h1{
+  	color:#FFF;
+  	line-height: 1.5;
+  }
+  h3{
+  	color:#FFF;
+  	letter-spacing:0.1em;
+  	line-height: 1.5;
+  }
+  
+}
+.household-leshi-tv{
+  color:$houseGray;
+  ul li a{
+    line-height:1.5;
+  } 
+}
+.house-image-banner{
+  padding-top:16%;
+  text-align:center;
+}
+.household-huadi{
+}
+.household-robby{
+  padding-bottom:7rem;
+}
+//智能汽车三级页面样式
+.sub-car-page{
+  background-color:#FEFFFF;
+}
+
+
+

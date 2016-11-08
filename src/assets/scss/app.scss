@@ -1,0 +1,160 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+
+
+// table.table-border{
+//   border-collapse:collapse;
+// }
+// table.table-border{
+//   border:1px solid #ddd;
+//   & td, & th{
+//     border:1px solid #ddd;
+//   }
+//   & tbody tr:nth-child(even){
+//     background:none;
+//   }
+// }
+$tableBorder:#DDD !default;
+table.table-border {
+    border-collapse: collapse;
+}
+table thead, table tbody, table tfoot{
+  background:#FFF;
+  border:none;
+}
+table.table-border td, table.table-border th {
+    border: 1px solid $tableBorder;
+    background:#FFF;
+}
+table.table-border tr:first-child td {
+    border-top: none;
+}
+table.table-border tr:last-child td {
+    border-bottom: none;
+}
+table.table-boder tr:first-child td{
+  border-top:none;
+}
+table.table-border tr td:first-child,
+table.table-border tr th:first-child {
+    border-left: none;
+}
+table.table-border tr td:last-child,
+table.table-border tr th:last-child {
+    border-right: none;
+}
+
+table.full-border {
+    border-collapse: collapse;
+}
+table thead, table tbody, table tfoot{
+  background:#FFF;
+  border:none;
+}
+table.full-border td, table.full-border th {
+    border: 1px dashed $tableBorder;
+    background:#FFF;
+}
+table.full-border tr:first-child td {
+    border-top-style: solid;
+}
+table.full-border tr:last-child td {
+    border-bottom-style: solid;
+}
+table.table-boder tr:first-child td{
+  border-top-style:solid;
+}
+table.full-border tr td:first-child,
+table.full-border tr th:first-child {
+    border-left-style: solid;
+}
+table.full-border tr td:last-child,
+table.full-border tr th:last-child {
+    border-right-style: solid;
+}
+*{outline:none !important;}
+
+
+.pull-left{
+	float:left !important;
+}
+.pull-right{
+	float:right !important;
+}
+#video-modal{
+  #youku-video{
+    min-height:24rem;
+  }
+}
+@include breakpoint(small){
+  #video-modal{
+    //top:40px !important;
+    #youku-video{
+      //height:12rem !important;
+    }
+  }
+}
+
+
+@import './components/_header.scss';
+@import './components/_footer.scss';
+@import './components/index.scss';
+@import './components/smarthome.scss';
+@import './components/smartcar.scss';
+@import './components/kar.scss';
+@import './components/smartedu.scss';
+@import './components/smartmedical.scss';
+@import './components/houseandcar.scss';
+@import './components/aboutus.scss';
+@import './components/usc.scss';
+

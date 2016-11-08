@@ -1,0 +1,298 @@
+@import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+$medicalSky : #34B0E9 !default;
+.smart-medical-banner{
+	background: #85D3F3 url(/assets/img/medical/topimg.jpg) center 30% repeat-x;
+  //background: #074E68 center 30% repeat-x;
+  position: relative;
+  padding: 14em 0 22rem;
+  text-align: center;
+  overflow: visible;
+  h1{
+  	color:#FFF;
+  	text-align:left;
+  }
+}
+
+.smart-medical-video{
+  .video-content{
+    position:relative;
+   .mask{
+      @include overlay();
+      .play-btn{
+        padding:1em 2rem;
+        border-radius:2rem;
+        color:#FFF;
+        border:1px solid #FEFEFD;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-6rem;
+        display:inline-block;
+        &:hover{
+          border-color:#FFF;
+        }
+      }
+    }
+  }
+
+}
+.medical-just-say-it{
+  .item{
+    padding:2rem;
+    &>div{
+      border:1px solid #DDD;
+      padding:3rem 0 1rem 0;
+      position:relative;
+      .title{
+        line-height: 5;
+      }
+      &:hover{
+        .mask{
+          display:block;  
+        }
+      }
+      .mask{
+        @include overlay();
+        background:rgba(105,176,210,.9);
+        display: none;
+        padding:0.5em;
+        color:#FFF;
+        text-align:left;
+      }
+    }
+  }
+}
+.medical-river{
+  background: #FFF url(/assets/img/medical/quxian.png) center 30% repeat-x;
+  padding:8rem 0;
+}
+.medical-line-sky{
+  background: #FFF url(/assets/img/medical/yl4.jpg) center 30% repeat-x;
+  padding:5rem 0;
+  .bg-radio{
+    line-height:2;
+    padding:0.5rem 3rem;
+    background:$medicalSky;
+    border-radius:3rem;
+    color:#FFF;
+    font-size: 1.4em;
+  }
+  .icon{
+    margin-right: 2rem;
+  }
+  .icon,.content{
+    float:left;
+    .title{
+      color:$medicalSky;
+    }
+  }
+}
+.blue-letter{
+  color:$medicalSky;
+}
+.medical-sound-case{
+  margin-bottom:8rem;
+  .item{
+    text-align:center;
+    padding:5rem 0 8rem 0;
+    position:relative;
+    height: 24rem;
+    .title{
+      position:absolute;
+      top: 14rem;
+      width: 100%;
+    }
+    p{
+      padding:0 0.5em;
+      position:absolute;
+      top:18rem;
+      width:100%;
+    }
+  }
+  .blue{
+    background:$medicalSky;
+    color:#FFF;
+  }
+  .gray{
+    background:#F6FBFF;
+    color:#5D6062;
+  }
+  .arrow_box-blue {
+    position: relative;
+    background: $medicalSky;
+    z-index: 99;
+  }
+  .arrow_box-blue:after {
+    left: 100%;
+    top: 37%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(52, 176, 233, 0);
+    border-left-color: $medicalSky;
+    border-width: 30px;
+    margin-top: -30px;
+  }
+
+  .arrow_box-gray {
+    position: relative;
+    background: #F6FBFF;
+    z-index: 8;
+  }
+  .arrow_box-gray:after {
+    left: 100%;
+    top: 37%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(52, 176, 233, 0);
+    border-left-color: #F6FBFF;
+    border-width: 30px;
+    margin-top: -30px;
+  }
+  @include breakpoint(small only){
+    .arrow_box-blue:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(52, 176, 233, 0);
+      border-top-color: $medicalSky;
+      border-width: 30px;
+      margin-left: -30px;
+      margin-top:0;
+    }
+    .arrow_box-gray:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(52, 176, 233, 0);
+      border-top-color: #F6FBFF;
+      border-width: 30px;
+      margin-left: -30px;
+      margin-top:0;
+    }
+  }
+}
+
+.medical-yi-zhan-shi{
+  background: #F0F8FC url(/assets/img/medical/yl5.png) center 30% no-repeat;
+  background-size:contain;
+  padding:5rem 0 3rem 0;
+  .vertical a{
+    color:#A2AAAE;
+    cursor: default;
+    position:relative;
+    padding-left:24px;
+    padding-right:0;
+    .icon-yes{
+      width:20px;
+      height:18px;
+      background:url(/assets/img/medical/duigou.png) no-repeat center;
+      background-size:contain;
+      display:inline-block;
+      position:absolute;
+      top:9px;
+      left:0;
+    }
+    &:hover,&:focus,&:visited,&:active{
+      color:#A2AAAE;
+    }
+  }
+  .country{
+    div.small-2{
+      position:relative;
+    }
+    div.line{
+      position:absolute;
+      top:1rem;
+      right:0;
+      width:0;
+      height:3rem;
+      border-left:1px solid #ddd;
+    }
+  }
+}
+.medical-dian-xing{
+  .orbit-container{
+    height:24rem !important;
+    li{
+      height:24rem !important;
+    }
+  }
+  img{
+    display:inherit;
+    margin:0 auto;
+  }
+  .orbit-caption{
+    background: none;
+  }
+  .orbit-next,.orbit-previous,{
+    color:$medicalSky;
+    top:24%;
+    &:hover{
+      color:#FFF;
+    }
+  }
+  .orbit-bullets .is-active{
+    color:$medicalSky;
+    background:$medicalSky;
+  }
+  .orbit-caption{
+    color:#A5A6A7;
+    text-align:center;
+    padding-top:2rem;
+  }
+}
+hr.long-line{
+  width:100%;
+  padding:4rem 0;
+  max-width:100%;
+}
+.medical-partner{
+  padding-bottom:3rem;
+  table p{
+    margin-bottom:0;
+  }
+}
+.top-dot-line,.center-dot-line,.bottom-dot-line{
+  padding-bottom:4rem;
+  position:relative;
+  .title{
+    position:absolute;
+    right:0;
+    font-size:1.5em;
+    color:$medicalSky;
+  }
+}
+.top-dot-line{
+  .title{
+    top: -1.5em;right: -0.5em;
+  }
+}
+.center-dot-line .title{
+  top: -1.5em;right: 1.5em;
+}
+.bottom-dot-line .title{
+  top:-0.5em;
+  right:-0.5em;
+}
+
+
+

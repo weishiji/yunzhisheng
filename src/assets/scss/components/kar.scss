@@ -1,0 +1,91 @@
+@import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+.kar-banner1{
+	background: #333 url(/assets/img/kar/kar_1.jpg) center 30% repeat-x;
+  //background: #074E68 center 30% repeat-x;
+  background-size:cover;
+  position: relative;
+  padding: 34rem 0 14.5rem;
+  text-align: center;
+  overflow: visible;
+  h1{
+  	color:#FFF;
+  	text-align:left;
+  }
+  h6{
+    color:#FFF;
+    text-align:left;
+  }
+  .mask{
+    @include overlay();
+    //background:rgba(242, 163, 170,0.6);
+    padding-top:17rem;
+
+  }
+}
+.car-description{
+  p{
+    color:#999;
+  }
+}
+.kar-banner2{
+  background: #333 url(/assets/img/kar/kar_2.jpg) center 30% repeat-x;
+  position: relative;
+  padding: 30.5rem 0 14.5rem;
+  text-align: center;
+  overflow: visible;
+  .mask{
+    @include overlay();
+    //background:RGBA(35, 156, 198, .6);
+    padding-top:17rem;
+  }
+  h1{
+    color:#FFF;
+    text-align:center;
+  }
+  h6{
+    color:#FFF;
+    text-align:center;
+  }
+}
+.unitoy-content{
+  padding:0 0 0 1rem;
+  text-align:center;
+  .list-footer{
+    h5{
+      color:RGBA(104, 108, 111, 1.00);
+      text-align:center;
+    }
+    h6{
+      color:lighten(#686C6F,20%);
+      text-align:center;
+    }
+  }
+}
+.kar-banner3{
+  background: #FED183 url(/assets/img/kar/yellow_bg.jpg) center 30% repeat-x;
+  img{
+    padding:10% 30% 30% 30%;
+  }
+  .orbit-slide{
+    background:#FFF;
+  }
+  .orbit-caption{
+    background:rgba(255,255,255,.0);
+    color:#777;
+    text-align:center;
+    height: 9em;
+    width: 100%;
+  }
+  .orbit-previous,.orbit-next{
+    color:#FED183;
+  }
+}
+
+.orbit-bullets button {
+  width: 2.2rem;
+  height: 0.2rem;
+  margin: 0.1rem;
+  background-color: #cacaca;
+  border-radius: 0%;
+}

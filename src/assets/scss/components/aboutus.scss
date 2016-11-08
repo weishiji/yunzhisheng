@@ -1,0 +1,327 @@
+@import 'mixins/overlay.scss';
+@import 'mixins/clearfixed.scss';
+
+//发展历程
+
+$timeline:#00BFAC !default;
+$timeColor:#87D4C8 !default;
+.progress-banner{
+ 	background: #A0A2A1 url(/assets/img/aboutus/fazhlich1.jpg) center 30% repeat-x;
+  background-size:cover;
+  position: relative;
+  padding: 8.5rem 0 10.5rem;
+  text-align: center;
+  overflow: visible;
+  color:#FFF;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.5em;
+  }
+  h2{
+  	letter-spacing: 1em;
+  }
+}
+.time-line{
+	&>.row{
+		padding:1rem 0;
+	}
+	.content{
+		position:relative;
+		color:#5B5B5C;
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.line{
+		position:absolute;
+		left:-5.6%;
+		border-left:2px solid $timeline;
+		width:0;
+		height: 350%;
+		top:-1rem;
+	}
+	.dot{
+		text-align:center;
+		img{
+			position:relative;
+			left:4px;
+		}
+	}
+	.time{
+		text-align:right;
+		color:$timeColor;
+	}
+}
+//公司简介
+$profileBlue:#54C0F0 !default;
+$profileText:#5A5F64 !default;
+.company-profile-banner{
+	background: #387A97 url(/assets/img/aboutus/jianjie1.jpg) center 30% repeat-x;
+  background-size:cover;
+  position: relative;
+  padding: 8.5rem 0 10.5rem;
+  text-align: center;
+  overflow: visible;
+  color:#FFF;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.5em;
+  	color:#FFF;
+  }
+  h2{
+  	line-height:4;
+  }
+}
+.company-profile-page{
+	.title{
+		text-align:center;
+		padding:2rem 0 1.5rem 0;
+		color:#FFF;
+		&.blue{
+			color:$profileBlue;
+		}
+	}
+	.profile-content{
+		color:$profileText;
+		p{
+			text-indent:2em;
+			margin-bottom:0;
+			line-height:2.4;
+		}
+	}
+}
+.profile-hope{
+	background: #9AD5ED url(/assets/img/aboutus/jianjie2.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding:3rem 0;
+}
+//合作伙伴
+.partner-banner{
+	background: #9AD5ED url(/assets/img/aboutus/huoban.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.5em;
+  }
+  h2{
+  	letter-spacing:0.5em;
+  }
+}
+.partner-page table td p {
+	margin-bottom:0;
+}
+.partner-text{
+	color:$profileText;
+	padding:5rem 0;
+}
+//联系我们
+.contact-us-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/lianxi.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  margin-bottom:5rem;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.3em;
+  }
+  h3{
+  	letter-spacing:0.2em;
+  }
+}
+.map-content{
+	position:relative;
+	&>div{
+		position:absolute;
+		left:2rem;
+		color:#FFF;
+		top:0;
+		background:#78CCF1;
+		padding:0.5rem;
+		p{
+			margin-bottom:0.5rem;
+		}
+	}
+}
+
+.contact-type{
+	padding-bottom:5rem;
+	.contact-title{
+		color:$profileBlue;
+		padding:1rem 0 0 0;
+	}	
+	.small-6{
+		padding:1rem;
+	}
+	p{
+		margin-bottom:0.5rem;
+	}
+	hr{
+		margin-top:0.5rem;
+	}
+}
+//加入我们
+.join-us-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/shezhao.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.3em;
+  }
+  h3{
+  	letter-spacing:0.2em;
+  }
+}
+.zhaopin-tabs{
+	background-color:#e6e6e6;
+	ul{
+		border:none;
+	}
+	a{
+		background:#e6e6e6;
+		text-align:center;
+		color:$profileBlue;
+		font-size:1.5em;
+		&:hover,&:active,&:focus,&:visited{
+			color:#FFF;
+			background:#e6e6e6;
+		}
+	}
+	.is-active{
+		a{
+			background:#FFF;
+			color:$profileBlue;
+		}
+	}
+	.tabs-title{
+		width:50%;
+	}
+}
+.zhaopin-content{
+	color:$profileText;
+	&>div{
+		border:none;
+		p.intend{
+			text-indent:2em;
+		}
+		p{
+			line-height:2.4;
+			margin-bottom: 0;
+		}	
+		.title{
+			color:$profileBlue;
+			padding:2rem 0;
+		}
+	}
+	.accordion-title{
+		color:$profileText;
+		font-size:1em;
+		border-bottom:1px solid #e6e6e6;
+		border-top:none;
+		border-left:none;
+		border-right:none;
+		padding:1em;
+		&:hover,&:visited,&:focus,&:active{
+			background:$profileBlue;
+			color:#FFF;
+		}
+		.work-area{
+			position: absolute;
+	    right: 2rem;
+	    top: 50%;
+	    margin-top: -0.5rem;
+	    display: none;
+		}
+		@include breakpoint(large){
+			.work-area{
+				display:block;
+			}
+		}
+	}
+	.accordion-content{
+		border:none;
+		padding:1rem;
+		section{
+			&>p{
+				margin-bottom: 0.8em;
+				&:first-of-type{
+					margin-bottom: 0;
+				}
+			}
+			border:2px solid $profileBlue;
+			padding:1rem;
+			p{
+				color:$profileText;
+				line-height:1.8;
+				text-indent:0;
+			}	
+		}
+		
+	}
+}
+//新闻动态
+.news-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/news.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding: 8.5rem 0 10.5rem;
+  color:#FFF;
+  text-align:center;
+  h1{
+  	font-size:4em;
+  	letter-spacing:0.3em;
+  }
+  h3{
+  	letter-spacing:0.2em;
+  }
+}
+.news-media{
+	padding:3rem 0;
+	.media-list{
+		padding:2rem 0;
+		display: block;
+		h4{
+			color:#00001C;
+		}
+		p{
+			color:#6E7376;
+		}
+		&:nth-child(even) {
+			background-color:#F3F8FB;	
+		}
+	}
+}
+//新闻详情
+.new-page{
+	background-color:#F0F5F8;
+}
+.new-page-banner{
+	background: #9AD5ED url(/assets/img/aboutus/new.jpg) center 30% repeat-x;
+  background-size:cover;
+  padding-bottom:30%;
+  color:#FFF;
+  text-align:center;
+}
+.new-content{
+	background-color:#FFF;
+	padding:2rem 3em 5rem 3em;
+	position:relative;
+	top:-8rem;
+	p.content{
+		text-indent:2em;
+		color:$profileText;
+		font-size:80%;
+		line-height:2.4;
+	}
+	.sub-title{
+		border-left:2px solid $profileBlue;
+		padding-left:0.6em;
+		color:$profileText;
+	}
+}
