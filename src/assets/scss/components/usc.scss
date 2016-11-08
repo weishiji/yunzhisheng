@@ -65,12 +65,13 @@
 .shade-border{
   height: 95px;
   width: 291px;
+  margin-top: -95px;
 }
 
 .shade{
   background-color: #141707;
   height: 76px;
-  left: 210px;
+  left: 230px;
   position: relative;
   top: -350px;
   width: 234px;
@@ -259,9 +260,9 @@
 }
 
 .content-4-circle{
-  left: -279px;
+  left: -236px;
   position: relative;
-  top: -420px;
+  top: -450px;
   z-index: 1001;
   animation:myCircle infinite 3s linear;
   -moz-animation:myCircle infinite 3s linear;  /*Firefox*/
