@@ -94,7 +94,6 @@ $profileText:#5A5F64 !default;
 	background: #9AD5ED url(/assets/img/aboutus/jianjie2.jpg) center 30% repeat-x;
   background-size:cover;
   padding:3rem 0;
-  margin-bottom:4rem;
 }
 //合作伙伴
 .partner-banner{
@@ -250,6 +249,12 @@ $profileText:#5A5F64 !default;
 		border:none;
 		padding:1rem;
 		section{
+			&>p{
+				margin-bottom: 0.8em;
+				&:first-of-type{
+					margin-bottom: 0;
+				}
+			}
 			border:2px solid $profileBlue;
 			padding:1rem;
 			p{

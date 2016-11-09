@@ -20,13 +20,12 @@ if($banner.length !== 0){
 }
 
 $('.wechat').hover(function(){
-  console.log(123)
   $('#wechat-code').show();
 },function(){
   $('#wechat-code').hide();
 })
 var $headerDropDown = $('header .is-drilldown');
-$headerDropDown.css('height',$('#main-page').height() + $('footer').height())
+$headerDropDown.css({'height':$('#main-page').height() + $('footer').height(),'min-height' : 'auto'})
 
 if(window.YKU){
   var _vid = $('input[name="vid"]').val();  

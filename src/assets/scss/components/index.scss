@@ -14,6 +14,9 @@ $borderLine:#B2E2F7 !default;
     @include breakpoint(large){
       font-size:4em;
     }
+    @include breakpoint(small){
+      font-size:2.6em;
+    }
     letter-spacing:0.1em;
   }
   h3{
@@ -97,7 +100,14 @@ $borderLine:#B2E2F7 !default;
   #hi-there{
     @include overlay();
     //display:none;
+    top:-196px;
   }
+  .svg-container{
+    width:1920px;
+    position:relative;
+    top:-200px;
+  }
+
 }
 .close-loop{
   @include clearfix();
@@ -328,4 +338,7 @@ $borderLine:#B2E2F7 !default;
   table p{
     margin-bottom:0;
   }
+}
+#youku-video{
+  background:url(/assets/img/logo/logo_color.svg) center no-repeat;
 }
