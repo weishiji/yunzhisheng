@@ -769,10 +769,12 @@ function startLineAnimation(){
     }
 }
 
+/*
 startLineAnimation();
 var windowWidth = $('html').width();
 var $svgContainer = $('.svg-container');
 $svgContainer.css({'left' : (windowWidth - 1920)/2})
+*/
 
 
 

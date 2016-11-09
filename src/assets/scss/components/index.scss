@@ -33,32 +33,10 @@ $borderLine:#B2E2F7 !default;
 }
 .index-page{
   overflow-x:hidden;
-  .small-yun-duan-xin{
-    display:none;
-  }
-  @include breakpoint(small only) {
-    .yun-duan-xin {
-      display: none;
-    }
-    .small-yun-duan-xin{
-      display:block;
-    }
-  }
-
-  @include breakpoint(medium) {
-    .yun-duan-xin{
-      //left:-20%;
-    }
-  }
-  @include breakpoint(large) {
-    .yun-duan-xin{
-      //left:0;
-    }
-  }
 }
 
 .yun-duan-xin{
-  //width:1440px;
+  /*//width:1440px;
   position:relative;
 
   overflow:hidden;
@@ -106,7 +84,7 @@ $borderLine:#B2E2F7 !default;
     width:1920px;
     position:relative;
     top:-200px;
-  }
+  }*/
 
 }
 .close-loop{
