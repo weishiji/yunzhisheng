@@ -1,6 +1,7 @@
 #!/bin/bash
 
 npm run build
-echo 'D8C021C1'
+echo 'D8C0'
+echo '21C1'
 rsync -P -rtv /Users/lxg/Documents/zhangjinhui/dist/  --rsh=ssh lxg@www.coderwe.com:/home/lxg/www/yunzhisheng/
 
