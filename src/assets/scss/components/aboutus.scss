@@ -273,6 +273,8 @@ $profileText:#5A5F64 !default;
   padding: 8.5rem 0 10.5rem;
   color:#FFF;
   text-align:center;
+	position: relative;
+	margin-top: -50px;
   h1{
   	font-size:4em;
   	letter-spacing:0.3em;
@@ -318,6 +320,9 @@ $profileText:#5A5F64 !default;
 		color:$profileText;
 		font-size:80%;
 		line-height:2.4;
+		img{
+			float: left;
+		}
 	}
 	.sub-title{
 		border-left:2px solid $profileBlue;
