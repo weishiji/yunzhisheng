@@ -149,8 +149,13 @@ table.full-border tr th:last-child {
   h1{
     font-size: 3.75rem;
   }
-  h3 {
+  h2 {
     font-size: 3rem;
+    line-height: 11rem;
+  }
+  h3 {
+    font-size: 1.875rem;
+    line-height: 6.875rem;
   }
   .test{
     hieght:100%;
@@ -158,7 +163,7 @@ table.full-border tr th:last-child {
 }
 
 .sub-title{
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 @import './components/_header.scss';

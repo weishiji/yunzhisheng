@@ -30,7 +30,7 @@
 }
 .ai-feature{
   background:#2E2F3F;
-  padding:3em 0 16em 0;
+  padding:3em 0 8em 0;
   margin:2rem 0;
   color:#FFF;
   .item{
@@ -110,8 +110,8 @@
     .title{
       text-align:center;
       color:lighten(#333435,30%);
-      padding:1rem 2rem;
       font-size:1.875em;
+      line-height: 4.875rem;
     }
     .des{
       text-align:center;
@@ -189,7 +189,7 @@
   margin-top:7rem;
   padding:3rem 0 4rem 0;
   background:#302F3F;
-  color:#FFF;
+  color:#fff;
   .text-color{
     color:#E0E4E5;
   }
@@ -212,6 +212,9 @@
     p{
       font-size: 1.125rem;
     }
+  }
+  .text-gray{
+    color:#81838F;
   }
 }
 

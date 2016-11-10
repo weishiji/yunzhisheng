@@ -8,13 +8,15 @@
   padding: 34rem 0 14.5rem;
   text-align: center;
   overflow: visible;
+  margin-top:-50px;
   h1{
   	color:#FFF;
   	text-align:left;
   }
-  h6{
+  .sub-title{
     color:#FFF;
     text-align:left;
+    font-size: 1.5rem;
   }
   .mask{
     @include overlay();
@@ -34,16 +36,13 @@
   padding: 30.5rem 0 14.5rem;
   text-align: center;
   overflow: visible;
+  color: #fff;
   .mask{
     @include overlay();
     //background:RGBA(35, 156, 198, .6);
-    padding-top:17rem;
+    padding-top:10rem;
   }
   h1{
-    color:#FFF;
-    text-align:center;
-  }
-  h6{
     color:#FFF;
     text-align:center;
   }
@@ -51,19 +50,18 @@
 .unitoy-content{
   padding:0 0 0 1rem;
   text-align:center;
-  .list-footer{
-    h5{
-      color:RGBA(104, 108, 111, 1.00);
-      text-align:center;
-    }
-    h6{
-      color:lighten(#686C6F,20%);
-      text-align:center;
-    }
+  .sub-title{
+    margin-bottom:1rem;
+  }
+  p{
+    margin-bottom:0;
+    line-height: 2rem;
+    color: #777;
   }
 }
 .kar-banner3{
   background: #FED183 url(/assets/img/kar/yellow_bg.jpg) center 30% repeat-x;
+  color: #fff;
   img{
     padding:10% 30% 30% 30%;
   }
