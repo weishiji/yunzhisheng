@@ -2,18 +2,8 @@
 @import 'mixins/clearfixed.scss';
 $medicalSky : #34B0E9 !default;
 .smart-medical-banner{
-	background: #85D3F3 url(/assets/img/medical/topimg.jpg) center 30% repeat-x;
-  //background: #074E68 center 30% repeat-x;
-  position: relative;
-  padding: 14em 0 22rem;
-  text-align: center;
-  overflow: visible;
-  h1{
-  	color:#FFF;
-  	text-align:left;
-  }
-}
 
+}
 .smart-medical-video{
   .video-content{
     position:relative;
@@ -243,7 +233,7 @@ $medicalSky : #34B0E9 !default;
   .orbit-caption{
     background: none;
   }
-  .orbit-next,.orbit-previous,{
+  .orbit-next,.orbit-previous{
     color:$medicalSky;
     top:24%;
     &:hover{

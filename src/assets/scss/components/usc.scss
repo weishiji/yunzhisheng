@@ -1,11 +1,8 @@
 .usc{
-  .top-img{
-    margin-top:-50px;
-    background-size: cover;
-    position: relative;
+  .top-full-screen{
     .dev-link{
-      position: absolute;
-      bottom:20%;
+      position: relative;
+      top:70%;
       width:100%;
       text-align: center;
       .button{
