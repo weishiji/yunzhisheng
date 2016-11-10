@@ -44,12 +44,16 @@
     small{
       color:#ACB0B3;
     }
+    p{
+      font-size: 1.125rem;
+    }
     p.des{
       position: absolute;
       left: 9%;
       bottom: 1.5em;
       width: 82%;
       height:4rem;
+      font-size: 0.875rem;
     }
     @include breakpoint(small only) {
       p.des{
@@ -70,8 +74,6 @@
       top:23%;
     }
   }
-
-
   .columns{
     text-align:center;
   }
@@ -103,16 +105,18 @@
       top:0;
       left:0;
       color:#EB8828;
-      font-size:2.4em;
+      font-size:1.875em;
     }
     .title{
       text-align:center;
       color:lighten(#333435,30%);
       padding:1rem 2rem;
+      font-size:1.875em;
     }
     .des{
       text-align:center;
       color:lighten(#333435,50%);
+      font-size:1.125em;
     }
   }
   .item .img:hover{
@@ -204,6 +208,9 @@
     hr{
       border-color:#434454;
       margin:4rem 0;
+    }
+    p{
+      font-size: 1.125rem;
     }
   }
 }

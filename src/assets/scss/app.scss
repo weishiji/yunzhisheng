@@ -145,6 +145,21 @@ table.full-border tr th:last-child {
   }
 }
 
+@media #{$small-up} {
+  h1{
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .test{
+    hieght:100%;
+  }
+}
+
+.sub-title{
+  font-size: 1.5rem;
+}
 
 @import './components/_header.scss';
 @import './components/_footer.scss';

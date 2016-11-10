@@ -92,7 +92,6 @@ header{
 
 .marketing-topbar {
     background: $darkBlue;
-    font-size: .8125rem;
     font-weight: bold;
     position: relative;
     background:transparent;
@@ -106,7 +105,9 @@ header{
     -ms-flex-order: 1;
     order: 1
 }
-
+.is-submenu-item{
+    font-size: .875rem;
+}
 .marketing-topbar::after {
     clear: both
 }
