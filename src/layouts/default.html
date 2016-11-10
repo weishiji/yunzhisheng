@@ -75,7 +75,7 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
-    {{#ifpage 'index' 'unihome' 'kar' 'unicar' 'uniedu' 'unihealth' 'household' 'univehicle' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us' 'school' 'news' 'new-*' 'usc'}}
+    {{#ifpage 'index' 'unihome' 'kar' 'unicar' 'uniedu' 'unihealth' 'household' 'univehicle' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us' 'school' 'news' 'news*-*' 'usc'}}
       <footer>
         <div class="row secondary">
           <div class="large-5 columns" style="margin-top:1em;height: 12rem;">
@@ -110,7 +110,7 @@
                   <li><a href="/contact-us.html">联系我们</a></li>
                 </ul>
               </div>
-              {{#ifpage 'index' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us' 'school' 'news' 'news-*' 'usc'}}
+              {{#ifpage 'index' 'company-profile' 'progress' 'partner' 'contact-us' 'join-us' 'school' 'news' 'news*-*' 'usc'}}
               <div class="small-12 medium-8 columns case-footer-type">
                 <h5 class="footer-sub-title">方案咨询</h5>
                 <ul class="menu vertical">
