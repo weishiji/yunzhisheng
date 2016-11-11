@@ -3375,7 +3375,7 @@ AQC5ZoSBcynwTgAAAABJRU5ErkJggg==" transform="matrix(1.7596 0 0 1.7318 -702.3471 
 		<circle id="XMLID_238_" class="st17" cx="977.3" cy="64" r="2.5"/>
 	</g>
 </g>
-<g id="text" style="display:none;">
+<g id="text">
 	<text id="XMLID_9_" transform="matrix(1 0 0 1 812.9117 292.9837)" class="st2 st20 st9">教育</text>
 	<text id="XMLID_61_" transform="matrix(1 0 0 1 938.2742 21.159)" class="st2 st20 st21">早教机</text>
 	<text id="XMLID_62_" transform="matrix(1 0 0 1 1263.9553 144.7146)" class="st2 st20 st21">机器人</text>
@@ -3400,10 +3400,6 @@ AQC5ZoSBcynwTgAAAABJRU5ErkJggg==" transform="matrix(1.7596 0 0 1.7318 -702.3471 
 	<text id="XMLID_94_" transform="matrix(1 0 0 1 872.0519 559.5862)" class="st17 st22 st6">芯</text>
 </g>
 <script>
-	window.onload=function(){
-	setTimeout(function(){
-		document.getElementById('text').style.display='block';
-	},3000);
-	}
+
 </script>
 </svg>

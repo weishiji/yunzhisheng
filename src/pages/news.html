@@ -12,13 +12,13 @@ currentPage: news-page
     <h3>云知声，专注物联网人工智能服务</h3>
   </div>
   <div class="news-media">
-    <a v-bind:href="item.url" class="media-list" v-for="(item, index) in news" :key="index">
-      <div class="row">
+    <div class="media-list" v-for="(item, index) in news" :key="index">
+      <a v-bind:href="item.url" class="row">
         <div class="small-12 column">
           <div class="media-object">
             <div class="media-object-section">
-              <div class="thumbnail" style="width: 300px;">
-                <img v-bind:src="'/assets/img/news/news'+item.id+'.jpg'" style="width: 100%">
+              <div class="thumbnail" style="width: 300px; display: none;">
+                <!--<img v-bind:src="'/assets/img/news/news'+item.id+'.jpg'" style="width: 100%">-->
               </div>
             </div>
             <div class="media-object-section main-section">
@@ -27,8 +27,8 @@ currentPage: news-page
             </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
     <!--<div class="media-list">
       <div class="row">
         <div class="small-12 column">

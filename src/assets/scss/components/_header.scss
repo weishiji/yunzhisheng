@@ -68,10 +68,9 @@ header{
     a:hover{
         background:none !important;
     }
-    img{
-        height:100%;
-        //padding:0.2rem 0;
-    }
+}
+.logo{
+    padding:0!important;
 }
 @include breakpoint(small only) {
    .is-drilldown li.title-area {
