@@ -116,9 +116,9 @@ function canvas_bg(url,worlUrl){
         imgObj=[
             {"imgUrl":"/assets/img/index/home1.png","imgDesc":"国内首家三甲医院上线\n医疗语音录入","imgLink":"ease0.html"},
             {"imgUrl":"/assets/img/index/home2.png","imgDesc":"中国后装车机市场\n占有率第一","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home3.png","imgDesc":"","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home4.png","imgDesc":"","imgLink":"ease0.html"},
-            {"imgUrl":"/assets/img/index/home5.png","imgDesc":"","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home3.png","imgDesc":"云知声合作伙伴超过\n2万家，覆盖用户月1.8亿 ","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home4.png","imgDesc":"2012年9月，云知声\n在产业界首先把深度学习\n引入到智能交互领域","imgLink":"ease0.html"},
+            {"imgUrl":"/assets/img/index/home5.png","imgDesc":"云知声拥有约100项\n专利和软著","imgLink":"ease0.html"},
             {"imgUrl":"/assets/img/index/home6.png","imgDesc":"公有云平台数据最大\n的创业公司","imgLink":"ease0.html"},
             {"imgUrl":"/assets/img/index/home7.png","imgDesc":"白色家电领域唯一落\n地出货的芯片供应商","imgLink":"ease0.html"}
         ]

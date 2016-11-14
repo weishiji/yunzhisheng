@@ -62,9 +62,9 @@ if(window.YKU){
 }
 //首页闭环
 var loopContent = {
-  'application' : {
-    'title' : 'AI基础架构'
-    ,'content' : '以深度学习为代表的机器学习、高性能计算、大数据，是人工智能技术的“三驾马车”，驱动着人工智能的前进和发展。'
+  'iot' : {
+    'title' : '物联网(IoT)应用'
+    ,'content' : '物联网（IoT）应用：智能语音交互、图像识别、手势控制、体感控制。'
   }
   ,'brain' : {
     'title' : '认知智能'
@@ -85,13 +85,18 @@ var loopContent = {
   ,'da' : {
     'title' : '大数据'
     ,'content' : '是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力来适应海量、高增长率和 多样化的信息资产。'
+  },
+  'base' : {
+   'title' : 'AI基础架构'
+   ,'content' : '以深度学习为代表的机器学习、高性能计算、大数据，是人工智能技术的“三驾马车”，驱动着人工智能的前进和发展。'
   }
 }
 var $tooltip = $('.close-loop .left-tooltip')
-$('.close-loop .ai-item').hover(function(){
+$('.close-loop .ai').hover(function(){
   var _key = $(this).data('key');
   var data = loopContent[_key];
   $tooltip.show().find('.content').html('<h5 class="text-center">'+ data.title +'</h5><small>'+ data.content +'</small>');
 },function(){
   //$tooltip.hide();
-})
+});
+
