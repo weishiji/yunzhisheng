@@ -97,14 +97,16 @@
       color:#EB8828;
       font-size:1.875em;
     }
+    .content{
+      padding:0 20%;
+      text-align: left;
+    }
     .title{
-      text-align:center;
       color:lighten(#333435,30%);
       font-size:1.875em;
       line-height: 4.875rem;
     }
     .des{
-      text-align:center;
       color:lighten(#333435,50%);
       font-size:1.125em;
     }
