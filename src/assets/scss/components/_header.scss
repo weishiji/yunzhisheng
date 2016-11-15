@@ -1,6 +1,6 @@
 $blue:#2199e8 !default;
 $darkBlue:#2c3840 !default;
-$menuBlue:#009CFC !default;
+$menuBlue: rgba(0, 156, 252, 0.7) !default;
 $menuDark:#04fffc !default;
 //在大屏幕下不显示左边栏按钮
 .no-js {
@@ -160,7 +160,7 @@ header{
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     &:hover{
-        background:$menuBlue;    
+        background:$menuBlue;
     }
 }
 
@@ -179,7 +179,16 @@ header{
 }
 
 .marketing-topbar .dropdown.menu>li.opens-right>.is-dropdown-submenu {
-    border: none
+    border: none;
+    &:after{
+        content: '';
+        position: absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        height: 16px;
+        background:$menuBlue;
+    }
 }
 
 .marketing-topbar .zurb-logo img {
@@ -216,6 +225,9 @@ header{
 
 .marketing-topbar .menu li:not(:last-child) {
     //border-right: 1px solid #3B4951
+}
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a{
+    padding-right: 1rem;
 }
 .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after{
     border-color:#FFF transparent transparent;
