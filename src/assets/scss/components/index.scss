@@ -243,18 +243,18 @@ $borderLine:#B2E2F7 !default;
 .home-business{
   margin-bottom:5rem;
   .case-item{
-    padding:3rem;
+    padding:3rem 6rem;
     position:relative;
     &:hover .item img{
       -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     }
-    
     .mask{
       @include overlay();
-      padding:3rem;
+      margin:3rem 6rem;
       z-index:10;
+      background: rgba(0, 0, 0, 0.5);
     }
   }
   img{
@@ -272,7 +272,7 @@ $borderLine:#B2E2F7 !default;
     background:#1B98D6;
     padding:1rem;
     position:absolute;
-    left:0;
+    left:3rem;
     bottom:0;
     width:70%;
     color:#FFF;
@@ -307,11 +307,12 @@ $borderLine:#B2E2F7 !default;
       padding:0.7em 2rem;
       border-radius:2rem;
       color:#FFF;
-      border:3px solid #ddd;
+      border:2px solid rgba(221, 221, 221, 0.6);
       display:inline-block;
-      letter-spacing: normal;
+      letter-spacing: 0.3rem;
       &:hover{
         border-color:#FFF;
+        background: rgba(255, 255, 255, 0.12);
       }
     }
   }
@@ -355,6 +356,17 @@ $borderLine:#B2E2F7 !default;
     width:33%;
     .right-arrow{
       top: 3rem;
+    }
+  }
+  .home-business{
+    .case-item{
+      padding:3rem;
+      .mask{
+        margin:3rem;
+      }
+    }
+    .footer{
+      left:0;
     }
   }
 }
