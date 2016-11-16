@@ -298,6 +298,7 @@ $borderLine:#B2E2F7 !default;
   padding-top:50%;
   background: #074E68 url(/assets/img/index/video.jpg) center;
   background-size:cover;
+  min-height: 180px;
   .mask{
     @include overlay();
     color:#FFF;
