@@ -303,7 +303,7 @@ $borderLine:#B2E2F7 !default;
     @include overlay();
     color:#FFF;
     padding-top:5%;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     .play-btn{
       padding:0.7em 2rem;
       border-radius:2rem;
@@ -333,8 +333,22 @@ $borderLine:#B2E2F7 !default;
   }
 }
 .index-partner{
+  overflow: hidden;
+  margin-bottom:20px;
   table p{
     margin-bottom:0;
+  }
+  .item{
+    width:25%;
+    float: left;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    &:nth-child(4n){
+      border-right: none;
+    }
+    &:nth-child(n+21){
+      border-bottom: none;
+    }
   }
 }
 #youku-video{
@@ -369,5 +383,23 @@ $borderLine:#B2E2F7 !default;
     .footer{
       left:0;
     }
+  }
+}
+
+.mobile{
+  .index-banner .content-text{
+    top:38%;
+  }
+  .title-bar{
+    background: transparent;
+  }
+  .title-bar-title{
+    display: none;
+  }
+  .is-drilldown{
+    background: #237e98;
+  }
+  .next{
+
   }
 }
