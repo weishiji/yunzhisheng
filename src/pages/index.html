@@ -14,13 +14,16 @@ currentPage: index-page
     <h3>专注互联网人工智能服务</h3>
   </div>
   <div id="particles-js"></div>
+  <div class="next">
+    <img src="/assets/img/index/mobile/ico_drop-down.png" alt="">
+  </div>
 </div>
 <div class="row">
   <div class="small-12 columns">
     <h3 style="margin: 0;padding:1rem 0;" class="text-center">大数据时代的AI技术闭环</h3>
   </div>
 </div>
-<div class="close-loop">
+<div class="close-loop hide-for-small-only">
   <div class="row">
     <div class="loop-line">
       <span class="right-arrow">▼&nbsp;&nbsp;<span style="color: #333;">数据</span></span>
@@ -81,6 +84,9 @@ currentPage: index-page
   <div style="margin-top: -10px;" class="ai text-center sub-title" data-key="base">AI基础架构</div>
   <br><br>
 </div>
+<div class="show-for-small-only ai-tech-mobile">
+  <img src="/assets/img/index/mobile/png_ai.png" alt="">
+</div>
 <div class="home-video-cover">
   <div class="mask text-center">
     <div class="show-for-large" style="padding-top: 2%;"></div>
@@ -105,25 +111,6 @@ currentPage: index-page
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-<!-- 
-<div class="home-video" style="display: none;">
-    <video id="really-cool-video" class="video-js vjs-default-skin" controls
-       preload="false" poster="really-cool-video-poster.jpg"
-       data-setup='{}'>
-        <source src="/assets/video/oceans.mp4" type="video/mp4">
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a web browser
-          that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-        </p>
-    </video>
-  <div class="row">
-    
-    <div class="flex-video widescreen vimeo">
-      <iframe src="/assets/video/oceans.mp4" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-    </div>  
-  </div>
-</div>
- -->
 
 <div class="yun-duan-xin">
   <h3 style="padding: 3rem 0;" class="text-center">云知声“云端芯”生态</h3>
@@ -147,11 +134,11 @@ currentPage: index-page
         </div>
       </a>
       <div class="item">
-        <img src="/assets/img/index/yewu1.jpg" /> 
+        <img src="/assets/img/index/yewu1.jpg" />
       </div>
       <div class="footer">
         <p>首款人工智能芯片</p>
-        <p>全自然语言交互，支持5米距离的远程精准识别</p>
+        <small>全自然语言交互，支持5米距离的远程精准识别</small>
       </div>
     </div>
     <div class="small-12 columns medium-6 case-item">
@@ -161,43 +148,43 @@ currentPage: index-page
         </div>
       </a>
       <div class="item">
-        <img src="/assets/img/index/yewu2.jpg"> 
+        <img src="/assets/img/index/yewu2.jpg">
       </div>
       <div class="footer">
         <p>全新语用计算</p>
-        <p>支持场景化引擎唤醒、多轮对话和深度导航，让驾驶更安全</p>
+        <small>支持场景化引擎唤醒、多轮对话和深度导航，让驾驶更安全</small>
       </div>
     </div>
     <div class="small-12 columns medium-6 case-item">
       <a href="/unihealth.html">
         <div class="mask">
-          <img src="/assets/img/index/yewu3_1.png"> 
+          <img src="/assets/img/index/yewu3_1.png">
         </div>
-      </a>  
+      </a>
       <div class="item">
         <a href="/unihealth.html">
-          <img src="/assets/img/index/yewu3.jpg"> 
-        </a>  
+          <img src="/assets/img/index/yewu3.jpg">
+        </a>
       </div>
       <div class="footer">
         <p>语音录入一体化解决方案</p>
-        <p>语音识别率超过95%，提升医生问诊效率</p>
+        <small>语音识别率超过95%，提升医生问诊效率</small>
       </div>
     </div>
     <div class="small-12 columns medium-6 case-item">
       <a href="/uniedu.html">
         <div class="mask">
-          <img src="/assets/img/index/yewu4_1.png"> 
-        </div>  
+          <img src="/assets/img/index/yewu4_1.png">
+        </div>
       </a>
       <div class="item">
         <a href="/uniedu.html">
-          <img src="/assets/img/index/yewu4.jpg"> 
+          <img src="/assets/img/index/yewu4.jpg">
         </a>
       </div>
       <div class="footer">
         <p>先进语音评测和语言处理技术</p>
-        <p>国内最大的口语评测公有平台，提供稳定、高效、智能化的口语评测服务</p>
+        <small>国内最大的口语评测公有平台，提供稳定、高效、智能化的口语评测服务</small>
       </div>
     </div>
   </div>
@@ -215,11 +202,16 @@ currentPage: index-page
   <div id="particles-js-2" class="particles-js-2"></div>
   <div class="row">
     <div class="small-12 columns">
-      <h3 style="margin: 0;padding:1rem 0;color:#FFF;position: relative;z-index:99;letter-spacing: 0.1em;" class="text-center">云知声的市场成就</h3>
+      <h3 class="text-center">云知声的市场成就</h3>
     </div>
   </div>
-  <canvas id="canvas" width="100%" height="610"></canvas>
-  <div class="work" id="work"></div>
+  <div class="hide-for-small-only">
+    <canvas  id="canvas" width="100%" height="610"></canvas>
+    <div class="work" id="work"></div>
+  </div>
+  <div class="show-for-small-only">
+    市场成就部分    TODO
+  </div>
 </div>
 
 <div class="row">

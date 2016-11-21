@@ -15,7 +15,7 @@ $borderLine:#B2E2F7 !default;
     color: #fff;
   }
   h1{
-    letter-spacing:0.2em;
+    letter-spacing:0.05em;
   }
   h3{
     color: #00f6ff;
@@ -242,6 +242,12 @@ $borderLine:#B2E2F7 !default;
 }
 .home-business{
   margin-bottom:5rem;
+  color:#FFF;
+  h3{
+    position: relative;
+    z-index:99;
+    letter-spacing: 0.1em;
+  }
   .case-item{
     padding:3rem 6rem;
     position:relative;
@@ -370,20 +376,43 @@ $borderLine:#B2E2F7 !default;
       top: 3rem;
     }
   }
-  .home-business{
-    .case-item{
-      padding:3rem;
-      .mask{
-        margin:3rem;
-      }
-    }
-    .footer{
-      left:0;
-    }
+  .home-marketing{
+    background: transparent;
+    color:#333;
   }
 }
 
 .mobile{
+  .home-business{
+    margin-bottom:2rem;
+    .case-item{
+      padding:0;
+      margin-bottom:10px;
+      &:hover .item img{
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      .mask,.item{
+        margin:0;
+        width:50%;
+      }
+    }
+    .footer{
+      top: 0;
+      left: 50%;
+      width: 50%;
+      padding: 7px;
+      height: 100%;
+      line-height: 1.2rem;
+      p{
+        margin-bottom:0;
+        line-height: 1.2rem;
+      }
+    }
+  }
+
+
   header + .re-top{
     margin-top:-40px;
   }
@@ -419,6 +448,12 @@ $borderLine:#B2E2F7 !default;
       float: left;
       border-bottom: 1px solid #dbdbdb;
       border-right: 1px solid #dbdbdb;
+      &:nth-child(4n){
+        border-right: 1px solid #dbdbdb;
+      }
+      &:nth-child(n+21){
+        border-bottom: 1px solid #dbdbdb;
+      }
       &:nth-child(3n){
         border-right: none;
       }
