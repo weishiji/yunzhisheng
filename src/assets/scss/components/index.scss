@@ -335,9 +335,6 @@ $borderLine:#B2E2F7 !default;
 .index-partner{
   overflow: hidden;
   margin-bottom:20px;
-  table p{
-    margin-bottom:0;
-  }
   .item{
     width:25%;
     float: left;
@@ -387,8 +384,12 @@ $borderLine:#B2E2F7 !default;
 }
 
 .mobile{
+  header + .re-top{
+    margin-top:-40px;
+  }
   .index-banner .content-text{
-    top:38%;
+    top:50%;
+    margin-top:-40px;
   }
   .title-bar{
     background: transparent;
@@ -400,6 +401,41 @@ $borderLine:#B2E2F7 !default;
     background: #237e98;
   }
   .next{
-
+    position: absolute;
+    left:0;
+    width:100%;
+    bottom:10%;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  .ai-tech-mobile{
+    padding:10px;
+    margin-bottom: 10px;
+  }
+  .index-partner{
+    .item{
+      width:33.3%;
+      float: left;
+      border-bottom: 1px solid #dbdbdb;
+      border-right: 1px solid #dbdbdb;
+      &:nth-child(3n){
+        border-right: none;
+      }
+      &:nth-child(n+22){
+        border-bottom: none;
+      }
+    }
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
   }
 }

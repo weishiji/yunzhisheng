@@ -800,5 +800,20 @@ $svgContainer.css({'left' : (windowWidth - 1920)/2})
 // });
 
 
+/* mobile */
 
-
+function setBanner () {
+  var el = document.getElementsByClassName('index-banner')[0];
+  el.style.height = document.documentElement.clientHeight+"px";
+};
+setBanner();
+window.onresize = function(){
+  setBanner();
+  console.log(1);
+}
+$('.next').on('click', function (e) {
+  e.preventDefault();
+  $('html,body').animate({
+    scrollTop:document.documentElement.clientHeight
+  }, 700);
+});
